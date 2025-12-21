@@ -1,0 +1,693 @@
+2025-12-01 11:31:21,072 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 11:31:23,513 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 11:31:35,584 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 11:31:35,584 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 11:31:35,584 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 11:31:35,585 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 11:36:12,507 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 11:36:14,984 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 11:36:27,026 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 11:36:27,026 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 11:36:27,026 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 11:36:27,028 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 11:45:59,714 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 11:46:02,117 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 11:46:14,327 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 11:46:14,328 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 11:46:14,328 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 11:46:14,329 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 12:13:06,533 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 12:13:09,377 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 12:13:22,974 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 12:13:22,974 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 12:13:22,975 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 12:13:22,976 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 12:13:22,976 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - Workflow initialized:
+2025-12-01 12:13:22,977 - run_full_workflow - INFO -   Repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 12:13:22,977 - run_full_workflow - INFO -   Output directory: test_output
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - ================================================================================
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - 开始完整工作流
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - ================================================================================
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - 问题描述: 修复 HomeTopSearch 与 ChatList 重叠的问题
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - 仓库路径: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - 
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - --------------------------------------------------------------------------------
+2025-12-01 12:13:22,977 - run_full_workflow - INFO - 步骤 1: 函数定位 (Function Locator)
+2025-12-01 12:13:22,978 - run_full_workflow - INFO - --------------------------------------------------------------------------------
+2025-12-01 12:13:22,978 - function_locator.locator - INFO - Starting function location for problem: 修复 HomeTopSearch 与 ChatList 重叠的问题...
+2025-12-01 12:13:22,978 - function_locator.locator - INFO - Step 1: Scanning repository for ArkTS files...
+2025-12-01 12:13:22,978 - function_locator.file_scanner - INFO - Scanning repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 12:13:23,027 - function_locator.file_scanner - INFO - Found 64 files with extensions ['.ets']
+2025-12-01 12:13:23,040 - function_locator.file_scanner - INFO - Successfully scanned 64 ArkTS files
+2025-12-01 12:13:23,040 - function_locator.locator - INFO - Found 64 ArkTS files
+2025-12-01 12:13:23,041 - function_locator.locator - INFO - Step 2: Generating file summaries...
+2025-12-01 12:24:12,417 - function_locator.locator - INFO - Generated 64 summaries
+2025-12-01 12:24:12,418 - function_locator.locator - INFO - Step 3: Using LLM to select most similar files...
+2025-12-01 12:24:45,290 - function_locator.similarity_search - ERROR - LLM 选择文件失败: Expecting value: line 1 column 2 (char 1)
+2025-12-01 12:24:45,291 - function_locator.locator - INFO - Found 10 unique similar files
+2025-12-01 12:24:45,292 - function_locator.locator - INFO - Step 4-5: Extracting functions and filtering with LLM...
+2025-12-01 12:24:45,293 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 12:24:45,293 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 12:24:45,299 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 12:24:45,300 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 12:24:45,301 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 12:26:46,241 - function_locator.llm_filter - WARNING - Error parsing light rerank response: Expecting value: line 1 column 2 (char 1)
+2025-12-01 12:26:46,242 - function_locator.locator - INFO - Function location completed successfully
+2025-12-01 12:26:46,245 - function_locator.output_writer - INFO - Locator result written to test_output/locator_output.json
+2025-12-01 12:26:46,245 - run_full_workflow - INFO - ✓ 定位成功: BreakpointType.GetValue
+2025-12-01 12:26:46,245 - run_full_workflow - INFO -   文件: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+2025-12-01 12:26:46,246 - run_full_workflow - INFO -   行号: 30-39
+2025-12-01 12:26:46,246 - run_full_workflow - INFO -   匹配文件数: 10
+2025-12-01 12:26:46,246 - run_full_workflow - INFO - 
+2025-12-01 12:26:46,246 - run_full_workflow - INFO - --------------------------------------------------------------------------------
+2025-12-01 12:26:46,246 - run_full_workflow - INFO - 步骤 2: 补丁生成 (Patch Generator)
+2025-12-01 12:26:46,246 - run_full_workflow - INFO - --------------------------------------------------------------------------------
+2025-12-01 12:26:46,246 - run_full_workflow - INFO - 为 10 个匹配文件生成补丁...
+2025-12-01 12:26:46,246 - run_full_workflow - INFO -   处理文件: BuildProfile.ets
+2025-12-01 12:26:46,247 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 12:26:46,247 - run_full_workflow - WARNING -   文件 BuildProfile.ets 没有提取到函数，跳过
+2025-12-01 12:26:46,247 - run_full_workflow - INFO -   处理文件: Index.ets
+2025-12-01 12:26:46,248 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 12:26:46,248 - run_full_workflow - WARNING -   文件 Index.ets 没有提取到函数，跳过
+2025-12-01 12:26:46,248 - run_full_workflow - INFO -   处理文件: BaseConstants.ets
+2025-12-01 12:26:46,253 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 12:26:46,254 - run_full_workflow - WARNING -   文件 BaseConstants.ets 没有提取到函数，跳过
+2025-12-01 12:26:46,254 - run_full_workflow - INFO -   处理文件: BreakpointConstants.ets
+2025-12-01 12:26:46,255 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 12:26:46,255 - run_full_workflow - WARNING -   文件 BreakpointConstants.ets 没有提取到函数，跳过
+2025-12-01 12:26:46,255 - run_full_workflow - INFO -   处理文件: BreakpointType.ets
+2025-12-01 12:26:46,256 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 12:26:46,257 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:26:57,264 - run_full_workflow - INFO -   ✓ 补丁生成成功: patch_1
+2025-12-01 12:26:57,264 - run_full_workflow - INFO -     文件: BreakpointType.ets
+2025-12-01 12:26:57,264 - run_full_workflow - INFO -     行号: 30-39
+2025-12-01 12:26:57,264 - run_full_workflow - INFO -   处理文件: ComponentAttrUtils.ets
+2025-12-01 12:26:57,266 - function_locator.function_extractor - INFO - Extracted 3 functions from ComponentAttrUtils.ets
+2025-12-01 12:26:57,267 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:27:21,034 - run_full_workflow - INFO -   ✓ 补丁生成成功: patch_2
+2025-12-01 12:27:21,034 - run_full_workflow - INFO -     文件: ComponentAttrUtils.ets
+2025-12-01 12:27:21,034 - run_full_workflow - INFO -     行号: 8-37
+2025-12-01 12:27:21,034 - run_full_workflow - INFO -   处理文件: Database.ets
+2025-12-01 12:27:21,042 - function_locator.function_extractor - INFO - Extracted 35 functions from Database.ets
+2025-12-01 12:27:21,042 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:29:23,782 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/Database_json_error.txt
+2025-12-01 12:29:23,783 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/Database_raw_response.txt for debugging
+2025-12-01 12:29:23,783 - run_full_workflow - WARNING -   文件 Database.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+2025-12-01 12:29:23,783 - run_full_workflow - INFO -   处理文件: DateHelper.ets
+2025-12-01 12:29:23,785 - function_locator.function_extractor - INFO - Extracted 5 functions from DateHelper.ets
+2025-12-01 12:29:23,785 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:31:26,742 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/DateHelper_json_error.txt
+2025-12-01 12:31:26,743 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/DateHelper_raw_response.txt for debugging
+2025-12-01 12:31:26,743 - run_full_workflow - WARNING -   文件 DateHelper.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+2025-12-01 12:31:26,743 - run_full_workflow - INFO -   处理文件: Helper.ets
+2025-12-01 12:31:26,744 - function_locator.function_extractor - INFO - Extracted 4 functions from Helper.ets
+2025-12-01 12:31:26,744 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:31:33,838 - run_full_workflow - INFO -   ✓ 补丁生成成功: patch_3
+2025-12-01 12:31:33,838 - run_full_workflow - INFO -     文件: Helper.ets
+2025-12-01 12:31:33,838 - run_full_workflow - INFO -     行号: 10-12
+2025-12-01 12:31:33,838 - run_full_workflow - INFO -   处理文件: KV.ets
+2025-12-01 12:31:33,839 - function_locator.function_extractor - INFO - Extracted 4 functions from KV.ets
+2025-12-01 12:31:33,839 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 12:31:40,580 - run_full_workflow - INFO -   ✓ 补丁生成成功: patch_4
+2025-12-01 12:31:40,580 - run_full_workflow - INFO -     文件: KV.ets
+2025-12-01 12:31:40,581 - run_full_workflow - INFO -     行号: 11-13
+2025-12-01 12:31:40,582 - patch_generator.generator - INFO - All 4 patches saved to test_output/patches/all_patches_20251201_123140.json and test_output/patches/all_patches_20251201_123140.diff
+2025-12-01 12:31:40,582 - run_full_workflow - INFO - ✓ 所有补丁已保存到: all_patches_20251201_123140.json 和 all_patches_20251201_123140.diff
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - ✓ 总共生成了 4 个补丁
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 跳过补丁应用步骤（使用 --apply 参数启用）
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - ================================================================================
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 工作流完成
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - ================================================================================
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 工作流状态: ✓ 成功
+2025-12-01 12:31:40,583 - run_full_workflow - INFO - 输出目录: test_output
+2025-12-01 13:07:11,042 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 13:07:13,485 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 13:07:25,216 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 13:07:25,217 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:07:25,217 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 13:07:25,218 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:07:25,218 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:07:25,219 - __main__ - INFO - Workflow initialized:
+2025-12-01 13:07:25,219 - __main__ - INFO -   Repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:07:25,219 - __main__ - INFO -   Output directory: test_output
+2025-12-01 13:07:25,219 - __main__ - INFO - ================================================================================
+2025-12-01 13:07:25,219 - __main__ - INFO - 开始完整工作流
+2025-12-01 13:07:25,219 - __main__ - INFO - ================================================================================
+2025-12-01 13:07:25,219 - __main__ - INFO - 问题描述: 修复 HomeTopSearch 与 ChatList 重叠的问题
+2025-12-01 13:07:25,219 - __main__ - INFO - 仓库路径: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:07:25,219 - __main__ - INFO - 
+2025-12-01 13:07:25,219 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:07:25,219 - __main__ - INFO - 步骤 1: 函数定位 (Function Locator)
+2025-12-01 13:07:25,219 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:07:25,220 - function_locator.locator - INFO - Starting function location for problem: 修复 HomeTopSearch 与 ChatList 重叠的问题...
+2025-12-01 13:07:25,220 - function_locator.locator - INFO - Step 1: Scanning repository for ArkTS files...
+2025-12-01 13:07:25,220 - function_locator.file_scanner - INFO - Scanning repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:07:25,265 - function_locator.file_scanner - INFO - Found 64 files with extensions ['.ets']
+2025-12-01 13:07:25,278 - function_locator.file_scanner - INFO - Successfully scanned 64 ArkTS files
+2025-12-01 13:07:25,278 - function_locator.locator - INFO - Found 64 ArkTS files
+2025-12-01 13:07:25,278 - function_locator.locator - INFO - Step 2: Generating file summaries...
+2025-12-01 13:07:25,286 - function_locator.locator - INFO - Generated 64 summaries
+2025-12-01 13:07:25,286 - function_locator.locator - INFO - Step 3: Using LLM to select most similar files...
+2025-12-01 13:07:57,432 - function_locator.similarity_search - ERROR - LLM 选择文件失败: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:07:57,432 - function_locator.locator - INFO - Found 10 unique similar files
+2025-12-01 13:07:57,432 - function_locator.locator - INFO - Step 4-5: Extracting functions and filtering with LLM...
+2025-12-01 13:07:57,433 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:07:57,434 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:07:57,439 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:07:57,440 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:07:57,442 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:08:46,416 - function_locator.llm_filter - WARNING - Error parsing light rerank response: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:08:46,417 - function_locator.locator - INFO - Function location completed successfully
+2025-12-01 13:08:46,419 - function_locator.output_writer - INFO - Locator result written to test_output/locator_output.json
+2025-12-01 13:08:46,419 - __main__ - INFO - ✓ 定位成功: BreakpointType.GetValue
+2025-12-01 13:08:46,419 - __main__ - INFO -   文件: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+2025-12-01 13:08:46,420 - __main__ - INFO -   行号: 30-39
+2025-12-01 13:08:46,420 - __main__ - INFO -   匹配文件数: 10
+2025-12-01 13:08:46,420 - __main__ - INFO - 
+2025-12-01 13:08:46,420 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:08:46,420 - __main__ - INFO - 步骤 2: 补丁生成 (Patch Generator)
+2025-12-01 13:08:46,420 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:08:46,420 - __main__ - INFO - 为 10 个匹配文件生成补丁...
+2025-12-01 13:08:46,420 - __main__ - INFO -   处理文件: BuildProfile.ets
+2025-12-01 13:08:46,421 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:08:46,421 - __main__ - WARNING -   文件 BuildProfile.ets 没有提取到函数，跳过
+2025-12-01 13:08:46,421 - __main__ - INFO -   处理文件: Index.ets
+2025-12-01 13:08:46,421 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:08:46,421 - __main__ - WARNING -   文件 Index.ets 没有提取到函数，跳过
+2025-12-01 13:08:46,422 - __main__ - INFO -   处理文件: BaseConstants.ets
+2025-12-01 13:08:46,427 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:08:46,427 - __main__ - WARNING -   文件 BaseConstants.ets 没有提取到函数，跳过
+2025-12-01 13:08:46,427 - __main__ - INFO -   处理文件: BreakpointConstants.ets
+2025-12-01 13:08:46,428 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:08:46,429 - __main__ - WARNING -   文件 BreakpointConstants.ets 没有提取到函数，跳过
+2025-12-01 13:08:46,429 - __main__ - INFO -   处理文件: BreakpointType.ets
+2025-12-01 13:08:46,430 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:08:46,430 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:08:56,809 - __main__ - INFO -   ✓ 补丁生成成功: patch_1
+2025-12-01 13:08:56,810 - __main__ - INFO -     文件: BreakpointType.ets
+2025-12-01 13:08:56,810 - __main__ - INFO -     行号: 30-39
+2025-12-01 13:08:56,810 - __main__ - INFO -   处理文件: ComponentAttrUtils.ets
+2025-12-01 13:08:56,812 - function_locator.function_extractor - INFO - Extracted 3 functions from ComponentAttrUtils.ets
+2025-12-01 13:08:56,812 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:09:20,935 - __main__ - INFO -   ✓ 补丁生成成功: patch_2
+2025-12-01 13:09:20,936 - __main__ - INFO -     文件: ComponentAttrUtils.ets
+2025-12-01 13:09:20,936 - __main__ - INFO -     行号: 8-37
+2025-12-01 13:09:20,936 - __main__ - INFO -   处理文件: Database.ets
+2025-12-01 13:09:20,943 - function_locator.function_extractor - INFO - Extracted 35 functions from Database.ets
+2025-12-01 13:09:20,943 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:11:23,030 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/Database_json_error.txt
+2025-12-01 13:11:23,031 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/Database_raw_response.txt for debugging
+2025-12-01 13:11:23,031 - __main__ - WARNING -   文件 Database.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+2025-12-01 13:11:23,031 - __main__ - INFO -   处理文件: DateHelper.ets
+2025-12-01 13:11:23,033 - function_locator.function_extractor - INFO - Extracted 5 functions from DateHelper.ets
+2025-12-01 13:11:23,033 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:13:26,280 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/DateHelper_json_error.txt
+2025-12-01 13:13:26,281 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/DateHelper_raw_response.txt for debugging
+2025-12-01 13:13:26,281 - __main__ - WARNING -   文件 DateHelper.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+2025-12-01 13:13:26,281 - __main__ - INFO -   处理文件: Helper.ets
+2025-12-01 13:13:26,282 - function_locator.function_extractor - INFO - Extracted 4 functions from Helper.ets
+2025-12-01 13:13:26,282 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:13:32,606 - __main__ - INFO -   ✓ 补丁生成成功: patch_3
+2025-12-01 13:13:32,606 - __main__ - INFO -     文件: Helper.ets
+2025-12-01 13:13:32,606 - __main__ - INFO -     行号: 10-12
+2025-12-01 13:13:32,606 - __main__ - INFO -   处理文件: KV.ets
+2025-12-01 13:13:32,607 - function_locator.function_extractor - INFO - Extracted 4 functions from KV.ets
+2025-12-01 13:13:32,608 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:13:38,537 - __main__ - INFO -   ✓ 补丁生成成功: patch_4
+2025-12-01 13:13:38,537 - __main__ - INFO -     文件: KV.ets
+2025-12-01 13:13:38,537 - __main__ - INFO -     行号: 11-13
+2025-12-01 13:13:38,539 - patch_generator.generator - INFO - All 4 patches saved to test_output/patches/all_patches_20251201_131338.json and test_output/patches/all_patches_20251201_131338.diff
+2025-12-01 13:13:38,539 - __main__ - INFO - ✓ 所有补丁已保存到: all_patches_20251201_131338.json 和 all_patches_20251201_131338.diff
+2025-12-01 13:13:38,539 - __main__ - INFO - ✓ 总共生成了 4 个补丁
+2025-12-01 13:13:38,539 - __main__ - INFO - 
+2025-12-01 13:13:38,539 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:13:38,539 - __main__ - INFO - 步骤 3: 补丁应用 (Patch Executor)
+2025-12-01 13:13:38,539 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:13:38,540 - patch_executor.executor - INFO - Processing patch: test_output/patches/all_patches_20251201_131338.json
+2025-12-01 13:13:38,540 - patch_executor.executor - INFO - Detected merged patch file with 4 patches
+2025-12-01 13:13:38,541 - patch_executor.executor - INFO - Found merged .diff file: test_output/patches/all_patches_20251201_131338.diff
+2025-12-01 13:13:38,546 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,549 - patch_executor.executor - INFO - Merged .diff file git apply failed: error: invalid path '/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets', falling back to individual patches
+2025-12-01 13:13:38,550 - patch_executor.executor - INFO -   Created temporary .diff file for patch 1/4
+2025-12-01 13:13:38,550 - patch_executor.executor - INFO -   Applying patch 1/4: BreakpointType.ets
+2025-12-01 13:13:38,554 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,560 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_0_BreakpointType.ets.diff
+2025-12-01 13:13:38,564 - patch_executor.patch_applier - INFO - Created temporary branch: autofix/20251201_131338
+2025-12-01 13:13:38,573 - patch_executor.executor - INFO -   Created temporary .diff file for patch 2/4
+2025-12-01 13:13:38,574 - patch_executor.executor - INFO -   Applying patch 2/4: ComponentAttrUtils.ets
+2025-12-01 13:13:38,587 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,590 - patch_executor.executor - INFO -   Applying patch 3/4: Helper.ets
+2025-12-01 13:13:38,591 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_2_Helper.ets.json
+2025-12-01 13:13:38,591 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets
+2025-12-01 13:13:38,592 - patch_executor.executor - INFO -   Created temporary .diff file for patch 4/4
+2025-12-01 13:13:38,592 - patch_executor.executor - INFO -   Applying patch 4/4: KV.ets
+2025-12-01 13:13:38,596 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,602 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_3_KV.ets.diff
+2025-12-01 13:13:38,605 - patch_executor.patch_applier - WARNING - Failed to create branch: fatal: A branch named 'autofix/20251201_131338' already exists.
+
+2025-12-01 13:13:38,605 - patch_executor.executor - INFO - Processing patch: test_output/patches/all_patches_20251201_123140.json
+2025-12-01 13:13:38,605 - patch_executor.executor - INFO - Detected merged patch file with 4 patches
+2025-12-01 13:13:38,606 - patch_executor.executor - INFO - Found merged .diff file: test_output/patches/all_patches_20251201_123140.diff
+2025-12-01 13:13:38,621 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,624 - patch_executor.executor - INFO - Merged .diff file git apply failed: error: invalid path '/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets', falling back to individual patches
+2025-12-01 13:13:38,625 - patch_executor.executor - INFO -   Created temporary .diff file for patch 1/4
+2025-12-01 13:13:38,625 - patch_executor.executor - INFO -   Applying patch 1/4: BreakpointType.ets
+2025-12-01 13:13:38,629 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,635 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_0_BreakpointType.ets.diff
+2025-12-01 13:13:38,638 - patch_executor.patch_applier - WARNING - Failed to create branch: fatal: A branch named 'autofix/20251201_131338' already exists.
+
+2025-12-01 13:13:38,639 - patch_executor.executor - INFO -   Created temporary .diff file for patch 2/4
+2025-12-01 13:13:38,639 - patch_executor.executor - INFO -   Applying patch 2/4: ComponentAttrUtils.ets
+2025-12-01 13:13:38,652 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,656 - patch_executor.executor - INFO -   Applying patch 3/4: Helper.ets
+2025-12-01 13:13:38,656 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_2_Helper.ets.json
+2025-12-01 13:13:38,656 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets
+2025-12-01 13:13:38,657 - patch_executor.executor - INFO -   Created temporary .diff file for patch 4/4
+2025-12-01 13:13:38,657 - patch_executor.executor - INFO -   Applying patch 4/4: KV.ets
+2025-12-01 13:13:38,661 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:13:38,665 - __main__ - ERROR - ✗ 补丁应用失败
+2025-12-01 13:13:38,665 - __main__ - ERROR - ✗ 补丁应用失败: 'patch'
+Traceback (most recent call last):
+  File "/root/PanGUfixerplus/arkts-auto-fix/run_full_workflow.py", line 341, in run
+    logger.error(f"  - {failure['patch']}: {failure['error']}")
+                        ~~~~~~~^^^^^^^^^
+KeyError: 'patch'
+2025-12-01 13:13:38,666 - __main__ - INFO - 
+2025-12-01 13:13:38,666 - __main__ - INFO - ================================================================================
+2025-12-01 13:13:38,666 - __main__ - INFO - 工作流完成
+2025-12-01 13:13:38,666 - __main__ - INFO - ================================================================================
+2025-12-01 13:13:38,666 - __main__ - INFO - 工作流状态: ✗ 失败
+2025-12-01 13:13:38,667 - __main__ - INFO - 输出目录: test_output
+2025-12-01 13:18:16,803 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 13:18:19,270 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 13:18:30,914 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 13:18:30,915 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:18:30,915 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 13:18:30,916 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:18:30,917 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:18:30,917 - __main__ - INFO - Workflow initialized:
+2025-12-01 13:18:30,917 - __main__ - INFO -   Repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:18:30,917 - __main__ - INFO -   Output directory: test_output
+2025-12-01 13:18:30,917 - __main__ - INFO - ================================================================================
+2025-12-01 13:18:30,917 - __main__ - INFO - 开始完整工作流
+2025-12-01 13:18:30,917 - __main__ - INFO - ================================================================================
+2025-12-01 13:18:30,917 - __main__ - INFO - 问题描述: 修复 HomeTopSearch 与 ChatList 重叠的问题
+2025-12-01 13:18:30,917 - __main__ - INFO - 仓库路径: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:18:30,917 - __main__ - INFO - 
+2025-12-01 13:18:30,917 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:18:30,917 - __main__ - INFO - 步骤 1: 函数定位 (Function Locator)
+2025-12-01 13:18:30,918 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:18:30,918 - function_locator.locator - INFO - Starting function location for problem: 修复 HomeTopSearch 与 ChatList 重叠的问题...
+2025-12-01 13:18:30,918 - function_locator.locator - INFO - Step 1: Scanning repository for ArkTS files...
+2025-12-01 13:18:30,918 - function_locator.file_scanner - INFO - Scanning repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:18:30,965 - function_locator.file_scanner - INFO - Found 64 files with extensions ['.ets']
+2025-12-01 13:18:30,977 - function_locator.file_scanner - INFO - Successfully scanned 64 ArkTS files
+2025-12-01 13:18:30,978 - function_locator.locator - INFO - Found 64 ArkTS files
+2025-12-01 13:18:30,978 - function_locator.locator - INFO - Step 2: Generating file summaries...
+2025-12-01 13:18:30,985 - function_locator.locator - INFO - Generated 64 summaries
+2025-12-01 13:18:30,985 - function_locator.locator - INFO - Step 3: Using LLM to select most similar files...
+2025-12-01 13:19:02,998 - function_locator.similarity_search - ERROR - LLM 选择文件失败: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:19:02,998 - function_locator.locator - INFO - Found 10 unique similar files
+2025-12-01 13:19:02,999 - function_locator.locator - INFO - Step 4-5: Extracting functions and filtering with LLM...
+2025-12-01 13:19:02,999 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:19:03,000 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:19:03,005 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:19:03,007 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:19:03,008 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:20:38,233 - function_locator.llm_filter - WARNING - Error parsing light rerank response: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:20:38,234 - function_locator.locator - INFO - Function location completed successfully
+2025-12-01 13:20:38,235 - function_locator.output_writer - INFO - Locator result written to test_output/locator_output.json
+2025-12-01 13:20:38,236 - __main__ - INFO - ✓ 定位成功: BreakpointType.GetValue
+2025-12-01 13:20:38,236 - __main__ - INFO -   文件: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+2025-12-01 13:20:38,236 - __main__ - INFO -   行号: 30-39
+2025-12-01 13:20:38,236 - __main__ - INFO -   匹配文件数: 10
+2025-12-01 13:20:38,236 - __main__ - INFO - 
+2025-12-01 13:20:38,236 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:20:38,236 - __main__ - INFO - 步骤 2: 补丁生成 (Patch Generator)
+2025-12-01 13:20:38,237 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:20:38,237 - __main__ - INFO - 为 10 个匹配文件生成补丁...
+2025-12-01 13:20:38,237 - __main__ - INFO -   处理文件: BuildProfile.ets
+2025-12-01 13:20:38,237 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:20:38,237 - __main__ - WARNING -   文件 BuildProfile.ets 没有提取到函数，跳过
+2025-12-01 13:20:38,237 - __main__ - INFO -   处理文件: Index.ets
+2025-12-01 13:20:38,238 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:20:38,238 - __main__ - WARNING -   文件 Index.ets 没有提取到函数，跳过
+2025-12-01 13:20:38,238 - __main__ - INFO -   处理文件: BaseConstants.ets
+2025-12-01 13:20:38,244 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:20:38,244 - __main__ - WARNING -   文件 BaseConstants.ets 没有提取到函数，跳过
+2025-12-01 13:20:38,244 - __main__ - INFO -   处理文件: BreakpointConstants.ets
+2025-12-01 13:20:38,245 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:20:38,245 - __main__ - WARNING -   文件 BreakpointConstants.ets 没有提取到函数，跳过
+2025-12-01 13:20:38,245 - __main__ - INFO -   处理文件: BreakpointType.ets
+2025-12-01 13:20:38,246 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:20:38,247 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:20:50,358 - __main__ - INFO -   ✓ 补丁生成成功: patch_1
+2025-12-01 13:20:50,358 - __main__ - INFO -     文件: BreakpointType.ets
+2025-12-01 13:20:50,358 - __main__ - INFO -     行号: 30-39
+2025-12-01 13:20:50,359 - __main__ - INFO -   处理文件: ComponentAttrUtils.ets
+2025-12-01 13:20:50,361 - function_locator.function_extractor - INFO - Extracted 3 functions from ComponentAttrUtils.ets
+2025-12-01 13:20:50,361 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:22:51,408 - __main__ - WARNING -   文件 ComponentAttrUtils.ets 补丁生成失败: No JSON found in response
+2025-12-01 13:22:51,409 - __main__ - INFO -   处理文件: Database.ets
+2025-12-01 13:22:51,416 - function_locator.function_extractor - INFO - Extracted 35 functions from Database.ets
+2025-12-01 13:22:51,416 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:24:07,165 - __main__ - INFO -   ✓ 补丁生成成功: patch_2
+2025-12-01 13:24:07,165 - __main__ - INFO -     文件: Database.ets
+2025-12-01 13:24:07,165 - __main__ - INFO -     行号: 15-22
+2025-12-01 13:24:07,165 - __main__ - INFO -   处理文件: DateHelper.ets
+2025-12-01 13:24:07,167 - function_locator.function_extractor - INFO - Extracted 5 functions from DateHelper.ets
+2025-12-01 13:24:07,167 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:25:25,712 - __main__ - INFO -   ✓ 补丁生成成功: patch_3
+2025-12-01 13:25:25,713 - __main__ - INFO -     文件: DateHelper.ets
+2025-12-01 13:25:25,713 - __main__ - INFO -     行号: 2-6
+2025-12-01 13:25:25,713 - __main__ - INFO -   处理文件: Helper.ets
+2025-12-01 13:25:25,714 - function_locator.function_extractor - INFO - Extracted 4 functions from Helper.ets
+2025-12-01 13:25:25,714 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:25:32,016 - __main__ - INFO -   ✓ 补丁生成成功: patch_4
+2025-12-01 13:25:32,016 - __main__ - INFO -     文件: Helper.ets
+2025-12-01 13:25:32,017 - __main__ - INFO -     行号: 10-12
+2025-12-01 13:25:32,017 - __main__ - INFO -   处理文件: KV.ets
+2025-12-01 13:25:32,018 - function_locator.function_extractor - INFO - Extracted 4 functions from KV.ets
+2025-12-01 13:25:32,018 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:25:38,912 - __main__ - INFO -   ✓ 补丁生成成功: patch_5
+2025-12-01 13:25:38,912 - __main__ - INFO -     文件: KV.ets
+2025-12-01 13:25:38,912 - __main__ - INFO -     行号: 11-13
+2025-12-01 13:25:38,913 - patch_generator.generator - INFO - All 5 patches saved to test_output/patches/all_patches_20251201_132538.json and test_output/patches/all_patches_20251201_132538.diff
+2025-12-01 13:25:38,913 - __main__ - INFO - ✓ 所有补丁已保存到: all_patches_20251201_132538.json 和 all_patches_20251201_132538.diff
+2025-12-01 13:25:38,914 - __main__ - INFO - ✓ 总共生成了 5 个补丁
+2025-12-01 13:25:38,914 - __main__ - INFO - 
+2025-12-01 13:25:38,914 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:25:38,914 - __main__ - INFO - 步骤 3: 补丁应用 (Patch Executor)
+2025-12-01 13:25:38,914 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:25:38,915 - __main__ - INFO - 应用最新补丁文件: all_patches_20251201_132538.json
+2025-12-01 13:25:38,915 - patch_executor.executor - INFO - Processing patch: test_output/patches/all_patches_20251201_132538.json
+2025-12-01 13:25:38,915 - patch_executor.executor - INFO - Detected merged patch file with 5 patches
+2025-12-01 13:25:38,915 - patch_executor.executor - INFO - Found merged .diff file: test_output/patches/all_patches_20251201_132538.diff
+2025-12-01 13:25:38,920 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:25:38,923 - patch_executor.executor - INFO - Merged .diff file git apply failed: error: invalid path '/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets', falling back to individual patches
+2025-12-01 13:25:38,924 - patch_executor.executor - INFO -   Created temporary .diff file for patch 1/5
+2025-12-01 13:25:38,925 - patch_executor.executor - INFO -   Applying patch 1/5: BreakpointType.ets
+2025-12-01 13:25:38,929 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:25:38,935 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_0_BreakpointType.ets.diff
+2025-12-01 13:25:38,939 - patch_executor.patch_applier - INFO - Created temporary branch: autofix/20251201_132538
+2025-12-01 13:25:38,948 - patch_executor.executor - INFO -   Created temporary .diff file for patch 2/5
+2025-12-01 13:25:38,948 - patch_executor.executor - INFO -   Applying patch 2/5: Database.ets
+2025-12-01 13:25:38,961 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:25:38,965 - patch_executor.executor - INFO -   Created temporary .diff file for patch 3/5
+2025-12-01 13:25:38,965 - patch_executor.executor - INFO -   Applying patch 3/5: DateHelper.ets
+2025-12-01 13:25:38,969 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:25:38,973 - patch_executor.executor - INFO -   Applying patch 4/5: Helper.ets
+2025-12-01 13:25:38,973 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_3_Helper.ets.json
+2025-12-01 13:25:38,973 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets
+2025-12-01 13:25:38,974 - patch_executor.executor - INFO -   Created temporary .diff file for patch 5/5
+2025-12-01 13:25:38,974 - patch_executor.executor - INFO -   Applying patch 5/5: KV.ets
+2025-12-01 13:25:38,978 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:25:38,984 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_4_KV.ets.diff
+2025-12-01 13:25:38,987 - patch_executor.patch_applier - WARNING - Failed to create branch: fatal: A branch named 'autofix/20251201_132538' already exists.
+
+2025-12-01 13:25:38,987 - __main__ - ERROR - ✗ 补丁应用失败
+2025-12-01 13:25:38,988 - __main__ - ERROR -   - test_output/patches/all_patches_20251201_132538.json: error: patch failed: common/base/src/main/ets/utils/Database/Database.ets:1
+error: common/base/src/main/ets/utils/Database/Database.ets: patch does not apply
+2025-12-01 13:25:38,988 - __main__ - ERROR -   - test_output/patches/all_patches_20251201_132538.json: error: patch failed: common/base/src/main/ets/utils/DateHelper/DateHelper.ets:2
+error: common/base/src/main/ets/utils/DateHelper/DateHelper.ets: patch does not apply
+2025-12-01 13:25:38,988 - __main__ - INFO - 
+2025-12-01 13:25:38,988 - __main__ - INFO - ================================================================================
+2025-12-01 13:25:38,988 - __main__ - INFO - 工作流完成
+2025-12-01 13:25:38,988 - __main__ - INFO - ================================================================================
+2025-12-01 13:25:38,988 - __main__ - INFO - 工作流状态: ✗ 失败
+2025-12-01 13:25:38,988 - __main__ - INFO - 输出目录: test_output
+2025-12-01 13:31:57,289 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 13:31:59,761 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 13:32:11,506 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 13:32:11,507 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:32:11,507 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 13:32:11,508 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:32:11,508 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:32:11,508 - __main__ - INFO - Workflow initialized:
+2025-12-01 13:32:11,509 - __main__ - INFO -   Repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:32:11,509 - __main__ - INFO -   Output directory: test_output
+2025-12-01 13:32:11,509 - __main__ - INFO - ================================================================================
+2025-12-01 13:32:11,509 - __main__ - INFO - 开始完整工作流
+2025-12-01 13:32:11,509 - __main__ - INFO - ================================================================================
+2025-12-01 13:32:11,509 - __main__ - INFO - 问题描述: 修复 HomeTopSearch 与 ChatList 重叠的问题
+2025-12-01 13:32:11,509 - __main__ - INFO - 仓库路径: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:32:11,509 - __main__ - INFO - 
+2025-12-01 13:32:11,509 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:32:11,509 - __main__ - INFO - 步骤 1: 函数定位 (Function Locator)
+2025-12-01 13:32:11,509 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:32:11,509 - function_locator.locator - INFO - Starting function location for problem: 修复 HomeTopSearch 与 ChatList 重叠的问题...
+2025-12-01 13:32:11,509 - function_locator.locator - INFO - Step 1: Scanning repository for ArkTS files...
+2025-12-01 13:32:11,510 - function_locator.file_scanner - INFO - Scanning repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:32:11,557 - function_locator.file_scanner - INFO - Found 64 files with extensions ['.ets']
+2025-12-01 13:32:11,570 - function_locator.file_scanner - INFO - Successfully scanned 64 ArkTS files
+2025-12-01 13:32:11,570 - function_locator.locator - INFO - Found 64 ArkTS files
+2025-12-01 13:32:11,570 - function_locator.locator - INFO - Step 2: Generating file summaries...
+2025-12-01 13:32:11,578 - function_locator.locator - INFO - Generated 64 summaries
+2025-12-01 13:32:11,578 - function_locator.locator - INFO - Step 3: Using LLM to select most similar files...
+2025-12-01 13:32:44,177 - function_locator.similarity_search - ERROR - LLM 选择文件失败: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:32:44,178 - function_locator.locator - INFO - Found 10 unique similar files
+2025-12-01 13:32:44,178 - function_locator.locator - INFO - Step 4-5: Extracting functions and filtering with LLM...
+2025-12-01 13:32:44,179 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:32:44,180 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:32:44,185 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:32:44,186 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:32:44,187 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:33:19,934 - function_locator.llm_filter - WARNING - Error parsing light rerank response: Expecting ':' delimiter: line 6 column 23 (char 126)
+2025-12-01 13:33:19,934 - function_locator.locator - INFO - Function location completed successfully
+2025-12-01 13:33:19,936 - function_locator.output_writer - INFO - Locator result written to test_output/locator_output.json
+2025-12-01 13:33:19,937 - __main__ - INFO - ✓ 定位成功: BreakpointType.GetValue
+2025-12-01 13:33:19,937 - __main__ - INFO -   文件: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+2025-12-01 13:33:19,937 - __main__ - INFO -   行号: 30-39
+2025-12-01 13:33:19,937 - __main__ - INFO -   匹配文件数: 10
+2025-12-01 13:33:19,937 - __main__ - INFO - 
+2025-12-01 13:33:19,937 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:33:19,937 - __main__ - INFO - 步骤 2: 补丁生成 (Patch Generator)
+2025-12-01 13:33:19,937 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:33:19,938 - __main__ - INFO - 为 10 个匹配文件生成补丁...
+2025-12-01 13:33:19,938 - __main__ - INFO -   处理文件: BuildProfile.ets
+2025-12-01 13:33:19,938 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:33:19,938 - __main__ - WARNING -   文件 BuildProfile.ets 没有提取到函数，跳过
+2025-12-01 13:33:19,938 - __main__ - INFO -   处理文件: Index.ets
+2025-12-01 13:33:19,939 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:33:19,939 - __main__ - WARNING -   文件 Index.ets 没有提取到函数，跳过
+2025-12-01 13:33:19,939 - __main__ - INFO -   处理文件: BaseConstants.ets
+2025-12-01 13:33:19,945 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:33:19,945 - __main__ - WARNING -   文件 BaseConstants.ets 没有提取到函数，跳过
+2025-12-01 13:33:19,945 - __main__ - INFO -   处理文件: BreakpointConstants.ets
+2025-12-01 13:33:19,946 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:33:19,946 - __main__ - WARNING -   文件 BreakpointConstants.ets 没有提取到函数，跳过
+2025-12-01 13:33:19,946 - __main__ - INFO -   处理文件: BreakpointType.ets
+2025-12-01 13:33:19,947 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:33:19,947 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:33:30,210 - __main__ - INFO -   ✓ 补丁生成成功: patch_1
+2025-12-01 13:33:30,210 - __main__ - INFO -     文件: BreakpointType.ets
+2025-12-01 13:33:30,211 - __main__ - INFO -     行号: 30-39
+2025-12-01 13:33:30,211 - __main__ - INFO -   处理文件: ComponentAttrUtils.ets
+2025-12-01 13:33:30,213 - function_locator.function_extractor - INFO - Extracted 3 functions from ComponentAttrUtils.ets
+2025-12-01 13:33:30,213 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:35:30,878 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/ComponentAttrUtils_json_error.txt
+2025-12-01 13:35:30,879 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/ComponentAttrUtils_raw_response.txt for debugging
+2025-12-01 13:35:30,879 - __main__ - WARNING -   文件 ComponentAttrUtils.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+2025-12-01 13:35:30,879 - __main__ - INFO -   处理文件: Database.ets
+2025-12-01 13:35:30,886 - function_locator.function_extractor - INFO - Extracted 35 functions from Database.ets
+2025-12-01 13:35:30,887 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:36:13,782 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/Database_json_error.txt
+2025-12-01 13:36:13,783 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/Database_raw_response.txt for debugging
+2025-12-01 13:36:13,783 - __main__ - WARNING -   文件 Database.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)
+2025-12-01 13:36:13,783 - __main__ - INFO -   处理文件: DateHelper.ets
+2025-12-01 13:36:13,785 - function_locator.function_extractor - INFO - Extracted 5 functions from DateHelper.ets
+2025-12-01 13:36:13,785 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:38:17,376 - __main__ - WARNING -   文件 DateHelper.ets 补丁生成失败: No JSON found in response
+2025-12-01 13:38:17,377 - __main__ - INFO -   处理文件: Helper.ets
+2025-12-01 13:38:17,378 - function_locator.function_extractor - INFO - Extracted 4 functions from Helper.ets
+2025-12-01 13:38:17,378 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:38:23,891 - __main__ - INFO -   ✓ 补丁生成成功: patch_2
+2025-12-01 13:38:23,891 - __main__ - INFO -     文件: Helper.ets
+2025-12-01 13:38:23,891 - __main__ - INFO -     行号: 10-12
+2025-12-01 13:38:23,892 - __main__ - INFO -   处理文件: KV.ets
+2025-12-01 13:38:23,893 - function_locator.function_extractor - INFO - Extracted 4 functions from KV.ets
+2025-12-01 13:38:23,893 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:38:29,470 - __main__ - INFO -   ✓ 补丁生成成功: patch_3
+2025-12-01 13:38:29,471 - __main__ - INFO -     文件: KV.ets
+2025-12-01 13:38:29,471 - __main__ - INFO -     行号: 11-13
+2025-12-01 13:38:29,472 - patch_generator.generator - INFO - All 3 patches saved to test_output/patches/all_patches_20251201_133829.json and test_output/patches/all_patches_20251201_133829.diff
+2025-12-01 13:38:29,472 - __main__ - INFO - ✓ 所有补丁已保存到: all_patches_20251201_133829.json 和 all_patches_20251201_133829.diff
+2025-12-01 13:38:29,472 - __main__ - INFO - ✓ 总共生成了 3 个补丁
+2025-12-01 13:38:29,472 - __main__ - INFO - 
+2025-12-01 13:38:29,472 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:38:29,472 - __main__ - INFO - 步骤 3: 补丁应用 (Patch Executor)
+2025-12-01 13:38:29,472 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:38:29,473 - __main__ - INFO - 应用最新补丁文件: all_patches_20251201_133829.json
+2025-12-01 13:38:29,473 - patch_executor.executor - INFO - Processing patch: test_output/patches/all_patches_20251201_133829.json
+2025-12-01 13:38:29,474 - patch_executor.executor - INFO - Detected merged patch file with 3 patches
+2025-12-01 13:38:29,474 - patch_executor.executor - INFO - Found merged .diff file: test_output/patches/all_patches_20251201_133829.diff
+2025-12-01 13:38:29,479 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:38:29,482 - patch_executor.executor - INFO - Merged .diff file git apply failed: error: invalid path '/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets', falling back to individual patches
+2025-12-01 13:38:29,483 - patch_executor.executor - INFO -   Created temporary .diff file for patch 1/3
+2025-12-01 13:38:29,483 - patch_executor.executor - INFO -   Applying patch 1/3: BreakpointType.ets
+2025-12-01 13:38:29,487 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:38:29,493 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_0_BreakpointType.ets.diff
+2025-12-01 13:38:29,497 - patch_executor.patch_applier - INFO - Created temporary branch: autofix/20251201_133829
+2025-12-01 13:38:29,506 - patch_executor.executor - INFO -   Applying patch 2/3: Helper.ets
+2025-12-01 13:38:29,506 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_1_Helper.ets.json
+2025-12-01 13:38:29,507 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets
+2025-12-01 13:38:29,507 - patch_executor.executor - INFO -   Created temporary .diff file for patch 3/3
+2025-12-01 13:38:29,507 - patch_executor.executor - INFO -   Applying patch 3/3: KV.ets
+2025-12-01 13:38:29,521 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:38:29,524 - patch_executor.executor - INFO -   Git apply failed, falling back to block replacement for patch 3
+2025-12-01 13:38:29,524 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_2_KV.ets.json
+2025-12-01 13:38:29,525 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets
+2025-12-01 13:38:29,525 - __main__ - INFO - ✓ 补丁应用成功
+2025-12-01 13:38:29,525 - __main__ - INFO -   已应用: 3 个补丁
+2025-12-01 13:38:29,525 - __main__ - INFO - 
+2025-12-01 13:38:29,525 - __main__ - INFO - ================================================================================
+2025-12-01 13:38:29,525 - __main__ - INFO - 工作流完成
+2025-12-01 13:38:29,525 - __main__ - INFO - ================================================================================
+2025-12-01 13:38:29,526 - __main__ - INFO - 工作流状态: ✓ 成功
+2025-12-01 13:38:29,526 - __main__ - INFO - 输出目录: test_output
+2025-12-01 13:51:16,840 - pangu_model - INFO - 加载 Pangu 模型: /opt/pangu/openPangu-Embedded-7B-V1.1, 设备: npu
+2025-12-01 13:51:19,255 - datasets - INFO - PyTorch version 2.5.1 available.
+2025-12-01 13:51:31,557 - pangu_model - INFO - Pangu 模型加载成功
+2025-12-01 13:51:31,557 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:51:31,558 - function_locator.similarity_search - INFO - Initialized SimilaritySearch with LLM-based file selection
+2025-12-01 13:51:31,559 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:51:31,559 - pangu_model - INFO - 复用已加载的模型: /opt/pangu/openPangu-Embedded-7B-V1.1
+2025-12-01 13:51:31,559 - __main__ - INFO - Workflow initialized:
+2025-12-01 13:51:31,559 - __main__ - INFO -   Repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:51:31,559 - __main__ - INFO -   Output directory: test_output
+2025-12-01 13:51:31,560 - __main__ - INFO - ================================================================================
+2025-12-01 13:51:31,560 - __main__ - INFO - 开始完整工作流
+2025-12-01 13:51:31,560 - __main__ - INFO - ================================================================================
+2025-12-01 13:51:31,560 - __main__ - INFO - 问题描述: 修复 HomeTopSearch 与 ChatList 重叠的问题
+2025-12-01 13:51:31,560 - __main__ - INFO - 仓库路径: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:51:31,560 - __main__ - INFO - 
+2025-12-01 13:51:31,560 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:51:31,560 - __main__ - INFO - 步骤 1: 函数定位 (Function Locator)
+2025-12-01 13:51:31,560 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:51:31,560 - function_locator.locator - INFO - Starting function location for problem: 修复 HomeTopSearch 与 ChatList 重叠的问题...
+2025-12-01 13:51:31,560 - function_locator.locator - INFO - Step 1: Scanning repository for ArkTS files...
+2025-12-01 13:51:31,560 - function_locator.file_scanner - INFO - Scanning repository: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram
+2025-12-01 13:51:31,607 - function_locator.file_scanner - INFO - Found 64 files with extensions ['.ets']
+2025-12-01 13:51:31,618 - function_locator.file_scanner - INFO - Successfully scanned 64 ArkTS files
+2025-12-01 13:51:31,619 - function_locator.locator - INFO - Found 64 ArkTS files
+2025-12-01 13:51:31,619 - function_locator.locator - INFO - Step 2: Generating file summaries...
+2025-12-01 13:51:31,626 - function_locator.locator - INFO - Generated 64 summaries
+2025-12-01 13:51:31,627 - function_locator.locator - INFO - Step 3: Using LLM to select most similar files...
+2025-12-01 13:52:05,778 - function_locator.similarity_search - ERROR - LLM 选择文件失败: Expecting value: line 1 column 2 (char 1)
+2025-12-01 13:52:05,778 - function_locator.locator - INFO - Found 10 unique similar files
+2025-12-01 13:52:05,778 - function_locator.locator - INFO - Step 4-5: Extracting functions and filtering with LLM...
+2025-12-01 13:52:05,779 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:52:05,780 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:52:05,785 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:52:05,786 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:52:05,788 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:52:53,156 - function_locator.llm_filter - WARNING - Error parsing light rerank response: Expecting ':' delimiter: line 6 column 23 (char 126)
+2025-12-01 13:52:53,157 - function_locator.locator - INFO - Function location completed successfully
+2025-12-01 13:52:53,159 - function_locator.output_writer - INFO - Locator result written to test_output/locator_output.json
+2025-12-01 13:52:53,159 - __main__ - INFO - ✓ 定位成功: BreakpointType.GetValue
+2025-12-01 13:52:53,159 - __main__ - INFO -   文件: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+2025-12-01 13:52:53,159 - __main__ - INFO -   行号: 30-39
+2025-12-01 13:52:53,159 - __main__ - INFO -   匹配文件数: 10
+2025-12-01 13:52:53,160 - __main__ - INFO - 
+2025-12-01 13:52:53,160 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:52:53,160 - __main__ - INFO - 步骤 2: 补丁生成 (Patch Generator)
+2025-12-01 13:52:53,160 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:52:53,160 - __main__ - INFO - 为 10 个匹配文件生成补丁...
+2025-12-01 13:52:53,160 - __main__ - INFO -   处理文件: BuildProfile.ets
+2025-12-01 13:52:53,160 - function_locator.function_extractor - INFO - Extracted 0 functions from BuildProfile.ets
+2025-12-01 13:52:53,161 - __main__ - WARNING -   文件 BuildProfile.ets 没有提取到函数，跳过
+2025-12-01 13:52:53,161 - __main__ - INFO -   处理文件: Index.ets
+2025-12-01 13:52:53,161 - function_locator.function_extractor - INFO - Extracted 0 functions from Index.ets
+2025-12-01 13:52:53,161 - __main__ - WARNING -   文件 Index.ets 没有提取到函数，跳过
+2025-12-01 13:52:53,161 - __main__ - INFO -   处理文件: BaseConstants.ets
+2025-12-01 13:52:53,167 - function_locator.function_extractor - INFO - Extracted 0 functions from BaseConstants.ets
+2025-12-01 13:52:53,167 - __main__ - WARNING -   文件 BaseConstants.ets 没有提取到函数，跳过
+2025-12-01 13:52:53,167 - __main__ - INFO -   处理文件: BreakpointConstants.ets
+2025-12-01 13:52:53,168 - function_locator.function_extractor - INFO - Extracted 0 functions from BreakpointConstants.ets
+2025-12-01 13:52:53,168 - __main__ - WARNING -   文件 BreakpointConstants.ets 没有提取到函数，跳过
+2025-12-01 13:52:53,168 - __main__ - INFO -   处理文件: BreakpointType.ets
+2025-12-01 13:52:53,169 - function_locator.function_extractor - INFO - Extracted 3 functions from BreakpointType.ets
+2025-12-01 13:52:53,170 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:53:04,315 - __main__ - INFO -   ✓ 补丁生成成功: patch_1
+2025-12-01 13:53:04,315 - __main__ - INFO -     文件: BreakpointType.ets
+2025-12-01 13:53:04,315 - __main__ - INFO -     行号: 30-39
+2025-12-01 13:53:04,315 - __main__ - INFO -   处理文件: ComponentAttrUtils.ets
+2025-12-01 13:53:04,318 - function_locator.function_extractor - INFO - Extracted 3 functions from ComponentAttrUtils.ets
+2025-12-01 13:53:04,318 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:53:30,248 - __main__ - INFO -   ✓ 补丁生成成功: patch_2
+2025-12-01 13:53:30,248 - __main__ - INFO -     文件: ComponentAttrUtils.ets
+2025-12-01 13:53:30,248 - __main__ - INFO -     行号: 8-37
+2025-12-01 13:53:30,249 - __main__ - INFO -   处理文件: Database.ets
+2025-12-01 13:53:30,256 - function_locator.function_extractor - INFO - Extracted 35 functions from Database.ets
+2025-12-01 13:53:30,256 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:54:41,556 - __main__ - INFO -   ✓ 补丁生成成功: patch_3
+2025-12-01 13:54:41,556 - __main__ - INFO -     文件: Database.ets
+2025-12-01 13:54:41,556 - __main__ - INFO -     行号: 15-22
+2025-12-01 13:54:41,556 - __main__ - INFO -   处理文件: DateHelper.ets
+2025-12-01 13:54:41,558 - function_locator.function_extractor - INFO - Extracted 5 functions from DateHelper.ets
+2025-12-01 13:54:41,558 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:56:52,266 - patch_generator.llm_patch - WARNING - Saved JSON error details to test_output/debug_responses/DateHelper_json_error.txt
+2025-12-01 13:56:52,267 - patch_generator.llm_patch - WARNING - Saved raw response to test_output/debug_responses/DateHelper_raw_response.txt for debugging
+2025-12-01 13:56:52,267 - __main__ - WARNING -   文件 DateHelper.ets 补丁生成失败: JSON decode error: Expecting property name enclosed in double quotes: line 2 column 3 (char 4)
+2025-12-01 13:56:52,267 - __main__ - INFO -   处理文件: Helper.ets
+2025-12-01 13:56:52,268 - function_locator.function_extractor - INFO - Extracted 4 functions from Helper.ets
+2025-12-01 13:56:52,268 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:56:59,233 - __main__ - INFO -   ✓ 补丁生成成功: patch_4
+2025-12-01 13:56:59,233 - __main__ - INFO -     文件: Helper.ets
+2025-12-01 13:56:59,233 - __main__ - INFO -     行号: 10-12
+2025-12-01 13:56:59,234 - __main__ - INFO -   处理文件: KV.ets
+2025-12-01 13:56:59,235 - function_locator.function_extractor - INFO - Extracted 4 functions from KV.ets
+2025-12-01 13:56:59,235 - patch_generator.llm_patch - INFO - Generating patch (attempt 1/3)...
+2025-12-01 13:57:05,644 - __main__ - INFO -   ✓ 补丁生成成功: patch_5
+2025-12-01 13:57:05,645 - __main__ - INFO -     文件: KV.ets
+2025-12-01 13:57:05,645 - __main__ - INFO -     行号: 11-11
+2025-12-01 13:57:05,646 - patch_generator.generator - INFO - All 5 patches saved to test_output/patches/all_patches_20251201_135705.json and test_output/patches/all_patches_20251201_135705.diff
+2025-12-01 13:57:05,646 - __main__ - INFO - ✓ 所有补丁已保存到: all_patches_20251201_135705.json 和 all_patches_20251201_135705.diff
+2025-12-01 13:57:05,646 - __main__ - INFO - ✓ 总共生成了 5 个补丁
+2025-12-01 13:57:05,646 - __main__ - INFO - 
+2025-12-01 13:57:05,646 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:57:05,646 - __main__ - INFO - 步骤 3: 补丁应用 (Patch Executor)
+2025-12-01 13:57:05,647 - __main__ - INFO - --------------------------------------------------------------------------------
+2025-12-01 13:57:05,647 - __main__ - INFO - 应用最新补丁文件: all_patches_20251201_135705.json
+2025-12-01 13:57:05,647 - patch_executor.executor - INFO - Processing patch: test_output/patches/all_patches_20251201_135705.json
+2025-12-01 13:57:05,648 - patch_executor.executor - INFO - Detected merged patch file with 5 patches
+2025-12-01 13:57:05,648 - patch_executor.executor - INFO - Found merged .diff file: test_output/patches/all_patches_20251201_135705.diff
+2025-12-01 13:57:05,663 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:57:05,666 - patch_executor.executor - INFO - Merged .diff file git apply failed: error: invalid path '/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets', falling back to individual patches
+2025-12-01 13:57:05,667 - patch_executor.executor - INFO -   Created temporary .diff file for patch 1/5
+2025-12-01 13:57:05,667 - patch_executor.executor - INFO -   Applying patch 1/5: BreakpointType.ets
+2025-12-01 13:57:05,672 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:57:05,678 - patch_executor.patch_applier - INFO - Patch applied successfully with git apply: /root/PanGUfixerplus/arkts-auto-fix/test_output/patches/temp_patch_0_BreakpointType.ets.diff
+2025-12-01 13:57:05,681 - patch_executor.patch_applier - INFO - Created temporary branch: autofix/20251201_135705
+2025-12-01 13:57:05,690 - patch_executor.executor - INFO -   Created temporary .diff file for patch 2/5
+2025-12-01 13:57:05,690 - patch_executor.executor - INFO -   Applying patch 2/5: ComponentAttrUtils.ets
+2025-12-01 13:57:05,703 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:57:05,706 - patch_executor.executor - INFO -   Git apply failed, falling back to block replacement for patch 2
+2025-12-01 13:57:05,707 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_1_ComponentAttrUtils.ets.json
+2025-12-01 13:57:05,707 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/ComponentAttrUtils.ets
+2025-12-01 13:57:05,707 - patch_executor.executor - INFO -   Created temporary .diff file for patch 3/5
+2025-12-01 13:57:05,708 - patch_executor.executor - INFO -   Applying patch 3/5: Database.ets
+2025-12-01 13:57:05,722 - patch_executor.patch_applier - INFO - Worktree saved with git stash
+2025-12-01 13:57:05,725 - patch_executor.executor - INFO -   Git apply failed, falling back to block replacement for patch 3
+2025-12-01 13:57:05,725 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_2_Database.ets.json
+2025-12-01 13:57:05,726 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Database/Database.ets
+2025-12-01 13:57:05,726 - patch_executor.executor - INFO -   Applying patch 4/5: Helper.ets
+2025-12-01 13:57:05,726 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_3_Helper.ets.json
+2025-12-01 13:57:05,727 - patch_executor.patch_applier - INFO - Patch applied with block replacement (line-based): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets
+2025-12-01 13:57:05,727 - patch_executor.executor - INFO -   Applying patch 5/5: KV.ets
+2025-12-01 13:57:05,727 - patch_executor.patch_applier - INFO - No .diff file found, using block replacement for test_output/patches/temp_patch_4_KV.ets.json
+2025-12-01 13:57:05,728 - patch_executor.patch_applier - INFO - Full code match failed, trying partial match...
+2025-12-01 13:57:05,728 - patch_executor.patch_applier - INFO - Trying insert mode detection...
+2025-12-01 13:57:05,728 - patch_executor.patch_applier - WARNING - Code content mismatch, but applying at lines 11-11 anyway (fallback mode)
+2025-12-01 13:57:05,728 - patch_executor.patch_applier - INFO - Patch applied with block replacement (fallback): /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets
+2025-12-01 13:57:05,728 - __main__ - INFO - ✓ 补丁应用成功
+2025-12-01 13:57:05,729 - __main__ - INFO -   已应用: 5 个补丁
+2025-12-01 13:57:05,729 - __main__ - INFO - 
+2025-12-01 13:57:05,729 - __main__ - INFO - ================================================================================
+2025-12-01 13:57:05,729 - __main__ - INFO - 工作流完成
+2025-12-01 13:57:05,729 - __main__ - INFO - ================================================================================
+2025-12-01 13:57:05,729 - __main__ - INFO - 工作流状态: ✓ 成功
+2025-12-01 13:57:05,729 - __main__ - INFO - 输出目录: test_output

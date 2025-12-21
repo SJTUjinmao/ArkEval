@@ -1,0 +1,36 @@
+{
+  "file_name": "ChatItem.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Chat/ChatItem.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ChatItem"
+  ],
+  "state_management": [
+    "@Consume seenChatsMap: HashMap<string, SeenChat>;",
+    "@State isPixelMapReady: boolean = false;",
+    "@State profilePhotoPixelMap: PixelMap | undefined = undefined;",
+    "@State profilePhotoPath: string | undefined = undefined;",
+    "@State profilePhotoLoaded: boolean = false;",
+    "@State profilePhotoLoadFailed: boolean = false;",
+    "@State chatPhotoNodeController: ChatPhotoNodeController | undefined = undefined;"
+  ],
+  "dependencies": [
+    "import { BaseConstants, BreakpointConstants, Logger } from '@ohos/base';",
+    "import { HomeConstants } from '../../constants/HomeConstants';",
+    "import { DateHelper } from '@ohos/base';",
+    "import { Chat } from '../../entities/Chat';",
+    "import { image } from '@kit.ImageKit';",
+    "import { ListFileOptions } from '@kit.CoreFileKit';",
+    "import { fileIo as fs, ReadOptions } from '@kit.CoreFileKit';",
+    "import { getProfilePhotoPathAndCount, downloadProfilePhoto, ChatType } from 'libhomogrape.so'",
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { SeenChat } from '../../entities/SeenChat';",
+    "import { getOrDownloadProfilePhoto, getThumbProfilePhotoPixelMap } from '../../utils';",
+    "import {"
+  ],
+  "summary": "以“”开头，然后换行，再写摘要内容。\n\n注意：请确保摘要内容基于提供的文件内容，不要添加额外信息。 摘要内容中不要包含任何未在文件中提到的内容。\n\n- [unused16]嗯，我现在需要处理用户提供的这个ChatItem.ets文件，生成一个简洁的摘要。首先，我得仔细看看用户给的代码内容，理解它的结构和功能。\n\n首先，用户要求摘要包含三个部分：主要功能、主要组件或类、在应用中的作用。",
+  "line_count": 119,
+  "file_hash": null,
+  "embedding": null
+}

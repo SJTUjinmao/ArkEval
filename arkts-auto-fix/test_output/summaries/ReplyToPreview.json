@@ -1,0 +1,26 @@
+{
+  "file_name": "ReplyToPreview.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Message/ReplyToPreview.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ReplyToPreview"
+  ],
+  "state_management": [
+    "@Consume currentChatId: string;",
+    "@Consume messagesOfChatMap: HashMap<string, MessageDataSource>;",
+    "@State mediaPath: string = \"\";"
+  ],
+  "dependencies": [
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { BaseConstants, Logger } from '@ohos/base';",
+    "import { downloadMediaFromMessage, MediaType } from 'libhomogrape.so';",
+    "import { MessageDataSource } from '../../viewmodel/Message/MessageDataSource';",
+    "import { fileIo as fs, ReadOptions } from '@kit.CoreFileKit';",
+    "import { HomeConstants } from '../../constants/HomeConstants';"
+  ],
+  "summary": "，请确保摘要简洁明了，避免冗余信息。\n\n \n该文件定义了 ReplyToPreview 组件，用于在消息回复预览中显示图片媒体内容，支持动态加载和显示图片，并在应用中提供消息回复的预览界面。 主要包含 ReplyToPreview 组件、HashMap、BaseConstants、Logger、libhomogrape 和 @kit 文件系统模块。",
+  "line_count": 77,
+  "file_hash": null,
+  "embedding": null
+}

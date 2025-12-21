@@ -1,0 +1,19 @@
+{
+  "file_name": "ChatDataSource.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/viewmodel/Chat/ChatDataSource.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { Logger } from '@ohos/base';",
+    "import { SortedHashMap } from '@ohos/base';",
+    "import { Chat } from '../../entities/Chat';",
+    "import { ArkTSUtils } from '@kit.ArkTS';"
+  ],
+  "summary": "以“”开头，以句号结束。不要包含任何markdown格式。\n\nChatDataSource 是一个用于管理聊天数据的数据源类，它实现了 IDataSource 接口，负责处理聊天数据的增删改查操作，同时支持对置顶聊天的快速访问和排序访问。该类包含多个私有映射和数组用于存储聊天数据，并通过监听器通知相关组件数据变化。在应用中，它为聊天功能提供数据支持，并确保数据的高效访问和更新。",
+  "line_count": 267,
+  "file_hash": null,
+  "embedding": null
+}

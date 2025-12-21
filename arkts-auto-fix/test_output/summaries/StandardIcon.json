@@ -1,0 +1,15 @@
+{
+  "file_name": "StandardIcon.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/views/image/StandardIcon.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "StandardIcon"
+  ],
+  "state_management": [],
+  "dependencies": [],
+  "summary": "摘要中不要包含任何代码片段或引用。\n\n\nStandardIcon 是一个用于构建标准图标组件的类，它定义了一个包含图标资源属性的结构体，并通过构建方法配置了图标的宽度和高度。该组件在应用中用于显示符合特定尺寸标准的设备图标。",
+  "line_count": 25,
+  "file_hash": null,
+  "embedding": null
+}

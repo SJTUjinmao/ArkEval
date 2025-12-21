@@ -1,0 +1,15 @@
+{
+  "file_name": "EventConstants.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/constants/EventConstants.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { emitter } from \"@kit.BasicServicesKit\";"
+  ],
+  "summary": "请确保摘要简洁明了，避免冗余信息。\n\n\n```\n\nEventConstants.ets 定义了应用中使用的自定义事件常量，包括前台事件和登录事件的枚举值，通过 InnerEvent 服务实现事件分发，用于统一管理事件类型及其唯一标识，确保事件处理的一致性和可维护性。该文件作为全局事件常量定义，为应用内不同组件提供统一的事件通信机制。",
+  "line_count": 10,
+  "file_hash": null,
+  "embedding": null
+}

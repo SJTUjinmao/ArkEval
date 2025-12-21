@@ -1,0 +1,45 @@
+{
+  "total_patches": 3,
+  "generated_at": "20251201_133829",
+  "patches": [
+    {
+      "patch_id": "patch_1",
+      "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets",
+      "old_code": "  GetValue(currentBreakpoint: string): T {\n    if (currentBreakpoint === BreakpointConstants.BREAKPOINT_MD) {\n      return this.md;\n    }\n    if (currentBreakpoint === BreakpointConstants.BREAKPOINT_LG) {\n      return this.lg;\n    } else {\n      return this.sm;\n    }\n  }",
+      "new_code": "  GetValue(currentBreakpoint: string): T {\n    if (currentBreakpoint === BreakpointConstants.BREAKPOINT_MD) {\n      return this.md;\n    }\n    if (currentBreakpoint === BreakpointConstants.BREAKPOINT_LG) {\n      return this.lg;\n    } else if (currentBreakpoint === BreakpointConstants.BREAKPOINT_SM) {\n      return this.sm;\n    }\n    return this.md;\n  }",
+      "unified_diff": "--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets\n+++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets\n@@ -33,7 +33,8 @@\n     }\n     if (currentBreakpoint === BreakpointConstants.BREAKPOINT_LG) {\n       return this.lg;\n-    } else {\n+    } else if (currentBreakpoint === BreakpointConstants.BREAKPOINT_SM) {\n       return this.sm;\n     }\n+    return this.md;\n   }\n",
+      "start_line": 30,
+      "end_line": 39,
+      "metadata": {
+        "explanation": "Extracted from double-quoted string (JSON parsing failed)",
+        "llm_model": "/opt/pangu/openPangu-Embedded-7B-V1.1"
+      }
+    },
+    {
+      "patch_id": "patch_2",
+      "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Helper.ets",
+      "old_code": "export function delay(ms: number): Promise<void> {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}",
+      "new_code": "export function delay(ms: number): Promise<void> {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}",
+      "unified_diff": "",
+      "start_line": 10,
+      "end_line": 12,
+      "metadata": {
+        "explanation": "The function 'delay' already correctly implements the required interface with the same signature and return type. The implementation using setTimeout is the standard way to create a Promise that resolves after a delay. No changes are needed to solve the problem as the function is already correct.",
+        "llm_model": "/opt/pangu/openPangu-Embedded-7B-V1.1"
+      }
+    },
+    {
+      "patch_id": "patch_3",
+      "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets",
+      "old_code": "  public has(key: string): boolean {\n    return this.dataPreferences.hasSync(key);\n  }",
+      "new_code": "public has(key: string): boolean {\\n  return this.dataPreferences.hasSync(key);\\n}",
+      "unified_diff": "--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets\n+++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets\n@@ -1,3 +1 @@\n-  public has(key: string): boolean {\n-    return this.dataPreferences.hasSync(key);\n-  }\n+public has(key: string): boolean {\\n  return this.dataPreferences.hasSync(key);\\n}\n",
+      "start_line": 11,
+      "end_line": 13,
+      "metadata": {
+        "explanation": "Extracted from double-quoted string (JSON parsing failed)",
+        "llm_model": "/opt/pangu/openPangu-Embedded-7B-V1.1"
+      }
+    }
+  ]
+}

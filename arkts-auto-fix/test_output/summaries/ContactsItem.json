@@ -1,0 +1,17 @@
+{
+  "file_name": "ContactsItem.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Contacts/ContactsItem.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ContactsItem"
+  ],
+  "state_management": [],
+  "dependencies": [
+    "import { BaseConstants, BreakpointConstants } from '@ohos/base';"
+  ],
+  "summary": "答案：\n\n- 主要功能：定义了一个联系人列表项组件，用于展示联系人信息及头像。\n- 主要组件：ContactsItem 组件，包含头像、姓名显示区域和占位元素。\n- 应用作用：作为联系人列表的UI构建块，实现用户对联系人的查看与管理。",
+  "line_count": 49,
+  "file_hash": null,
+  "embedding": null
+}

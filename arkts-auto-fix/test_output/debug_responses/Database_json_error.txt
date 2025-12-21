@@ -1,0 +1,66 @@
+Original Response:
+agrid.init"
+  ]
+}
+
+Okay, I need to fix the overlapping issue between HomeTopSearch and ChatList. Let me look at the provided code snippet for the Database.init function.
+
+The problem is that both HomeTopSearch and ChatList might be trying to initialize the Database at the same time, leading to conflicts. The current code initializes Database.rdb immediately when init is called, which could cause race conditions.
+
+To resolve this, I should modify the init function to check if the Database is already initialized before proceeding. If it's already initialized, we should return the existing instance instead of re-initializing. This way, only one component initializes the Database, preventing overlaps.
+
+Looking at the existing code, there's a `Database.isInit()` function that checks if the Database is initialized. So I'll use that to check the status. If it's not initialized, then proceed with getting the RdbStore. Otherwise, just return the existing instance.
+
+The minimal change would be to add a check at the beginning of the init function. If the Database is already initialized, return the existing rdb store. Otherwise, proceed with the original initialization logic.
+
+I'll modify the function to:
+1. First check if the Database is already initialized using Database.isInit()
+2. If it is initialized, return the existing Database.rdb
+3. If not, proceed with the original initialization code
+
+This approach maintains the same function signature and parameters while preventing multiple initializations. It also ensures that the function returns a valid Database instance in all cases.
+
+The change is minimal and focused on solving the overlapping initialization problem between HomeTopSearch and ChatList. I'm initializing the Database module and noticing potential conflicts between HomeTopSearch and ChatList. The current implementation might cause issues when multiple components try to initialize the database simultaneously. 
+
+I'll modify the init function to check if the database is already initialized before proceeding. This prevents redundant or conflicting initialization attempts. By checking Database.isInit() first, we ensure only one component actually performs the database setup, avoiding potential race conditions.
+
+The key change is adding a conditional check at the start of the function. If the database is already initialized, we simply return the existing instance. Otherwise, we proceed with the original initialization logic. This approach maintains the function's interface while preventing overlapping initialization between components.
+
+The solution addresses the core issue by making the initialization lazy - it happens only when truly needed, which should resolve the conflicts between HomeTopSearch and ChatList.[unused17]```arkts
+  public static async init(context: Context) {
+    if (Database.isInit()) {
+      return Database.rdb;
+    }
+    try {
+      Database.rdb = await relationalStore.getRdbStore(context, Database.STORE_CONFIG);
+      Logger.info('Succeeded in getting RdbStore.');
+    } catch (err) {
+      Logger.error(`Failed to get RdbStore. Code:${err.code}, message:${err.message}`);
+    }
+  }
+```
+
+The key change is adding a check for `Database.isInit()` at the start of the function. This prevents multiple components from initializing the database simultaneously by:
+1. First checking if the database is already initialized using `Database.isInit()`
+2. If already initialized, returning the existing instance immediately
+3. Only proceeding with initialization if not already set
+
+This prevents the race condition where both HomeTopSearch and ChatList try to initialize the database at the same time, which was causing the overlap issue.
+
+tests_to_run:
+["testDatabaseInit", "testDatabaseConcurrency"]
+
+Extracted JSON:
+{
+    if (Database.isInit()) {
+      return Database.rdb;
+    }
+    try {
+      Database.rdb = await relationalStore.getRdbStore(context, Database.STORE_CONFIG);
+      Logger.info('Succeeded in getting RdbStore.');
+    } catch (err) {
+      Logger.error("Failed to get RdbStore. Code:${err.code}, message:${err.message}");
+    }
+  }
+
+Error: Expecting property name enclosed in double quotes: line 2 column 5 (char 6)

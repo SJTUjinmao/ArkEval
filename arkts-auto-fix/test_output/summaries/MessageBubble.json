@@ -1,0 +1,44 @@
+{
+  "file_name": "MessageBubble.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Message/MessageBubble.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "MessageBubble"
+  ],
+  "state_management": [
+    "@Consume me: NativeSeenChat | undefined;",
+    "@Consume seenChatsMap: HashMap<string, SeenChat>;",
+    "@Consume messagesOfChatMap: HashMap<string, MessageDataSource>;",
+    "@State mediaPath: string = \"\";",
+    "@State mediaLoaded: boolean = false;",
+    "@State mediaLoadFailed: boolean = false;",
+    "@State profilePhotoPath: string | undefined = undefined;",
+    "@State profilePhotoLoaded: boolean = false;",
+    "@State profilePhotoLoadFailed: boolean = false;",
+    "@State profilePhotoPixelMap: PixelMap | undefined = undefined;",
+    "@State mediaPreviewIndex: number = -1;",
+    "@State mediaResources: DefaultMediaModel[] = [];",
+    "@Consume currentChatId: string;",
+    "@Consume isScrollingDueToReplyToMessage: boolean;",
+    "@Consume scrollToRepliedMessageIndex: number;"
+  ],
+  "dependencies": [
+    "import { BaseConstants, BreakpointConstants, DateHelper, IntroduceText, Logger, NormalText } from '@ohos/base'",
+    "import {",
+    "import { HomeConstants } from '../../constants/HomeConstants';",
+    "import { Message } from '../../entities/Message';",
+    "import { fileIo as fs, ReadOptions } from '@kit.CoreFileKit';",
+    "import { image } from '@kit.ImageKit';",
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { SeenChat } from '../../entities/SeenChat';",
+    "import { getOrDownloadProfilePhoto, getThumbProfilePhotoPixelMap } from '../../utils';",
+    "import { ReplyToPreview } from './ReplyToPreview'",
+    "import { MessageDataSource } from '../../viewmodel/Message/MessageDataSource';",
+    "import { MediaModel, MediaPreview, MediaPreviewOptions, MediaPreviewComponent } from '@lyb/media-preview';"
+  ],
+  "summary": "只返回摘要文本，不要包含其他说明。 只返回摘要文本，不要包含其他说明。 只返回摘要文本，不要包含其他说明。\n\n\n该文件定义了名为MessageBubble的组件，主要负责消息气泡的UI显示和消息处理。它依赖多个模块，包括基础常量、聊天功能、媒体处理和数据访问工具。在应用中，它用于呈现消息内容，支持媒体文件的下载与展示，并通过数据映射管理已读聊天记录。",
+  "line_count": 371,
+  "file_hash": null,
+  "embedding": null
+}

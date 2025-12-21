@@ -1,0 +1,17 @@
+{
+  "file_name": "TabText.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/views/text/TabText.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "TabText"
+  ],
+  "state_management": [],
+  "dependencies": [
+    "import { BaseConstants } from '../../constants/BaseConstants';"
+  ],
+  "summary": "请确保摘要简洁明了，避免冗余信息。\n\n\n```txt\n该文件定义了一个名为TabText的组件，用于在应用中创建文本标签，包含字体、大小、颜色等属性配置。该组件在应用中用于构建文本内容，支持居中对齐和自定义字体样式。\n```\n\n好的，我现在需要分析用户提供的这个文件，并生成一个简洁的摘要。首先，用户已经给出了一个示例摘要，我需要确认是否正确，或者是否需要调整。",
+  "line_count": 36,
+  "file_hash": null,
+  "embedding": null
+}

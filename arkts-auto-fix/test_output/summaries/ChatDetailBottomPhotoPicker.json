@@ -1,0 +1,25 @@
+{
+  "file_name": "ChatDetailBottomPhotoPicker.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Chat/ChatDetailBottomPhotoPicker.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ChatDetailBottomPhotoPicker"
+  ],
+  "state_management": [
+    "@State pickerController: PickerController = new PickerController();",
+    "@State selectedUris: string[] = [];",
+    "@State currentUri: string = '';",
+    "@State isBlock: boolean = false; // whether to allow opening system camera",
+    "@Link selectedMediaCount: number;",
+    "@Link animate: boolean;"
+  ],
+  "dependencies": [
+    "import {",
+    "import photoAccessHelper from '@ohos.file.photoAccessHelper';"
+  ],
+  "summary": "答案：\n\nChatDetailBottomPhotoPicker 是一个用于聊天详情页面底部的照片选择器组件，主要负责处理用户选择照片的逻辑，并与系统相册或相机应用交互。 它依赖于 PhotoPickerComponent 和 PickerController 组件，通过 onSelect 和 onDeselect 回调实现资源选择与取消功能。",
+  "line_count": 210,
+  "file_hash": null,
+  "embedding": null
+}

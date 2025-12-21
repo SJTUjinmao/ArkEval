@@ -1,0 +1,21 @@
+{
+  "file_name": "ChatDetailTopSearch.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Chat/ChatDetailTopSearch.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ChatDetailTopSearch"
+  ],
+  "state_management": [
+    "@Consume('pageInfo') pageInfo: NavPathStack;"
+  ],
+  "dependencies": [
+    "import { BaseConstants, BreakpointConstants, StandardIcon } from '@ohos/base';",
+    "import { HomeConstants } from '../../constants/HomeConstants';",
+    "import { deviceInfo } from '@kit.BasicServicesKit';"
+  ],
+  "summary": "请确保摘要内容准确，不添加额外信息。\n\n\n```plaintext\n该文件定义了一个名为ChatDetailTopSearch的组件，用于在聊天详情页面顶部显示用户信息和提供返回及导航功能。主要包含返回按钮、当前聊天用户名称显示以及根据断点状态管理页面导航逻辑。它在应用中负责处理用户交互和页面跳转，提升聊天功能的导航体验。\n```s",
+  "line_count": 56,
+  "file_hash": null,
+  "embedding": null
+}

@@ -1,0 +1,17 @@
+{
+  "file_name": "ChatDao.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/dao/ChatDao.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import sql from \"@liushengyi/smartdb\"",
+    "import { Chat } from \"../entities/Chat\"",
+    "import { DatabaseConstants } from \"../constants/DatabaseConstants\""
+  ],
+  "summary": "以“”开头，以句号结束。\n\n\n该文件定义了一个名为ChatDao的数据访问对象，用于管理聊天数据的CRUD操作。它包含创建、插入、查询和删除聊天记录的方法，并使用SQL直接操作数据库表。该DAO在应用中作为聊天功能的数据访问层，确保对聊天数据的访问和操作。 \n\n（注意：由于原文本被截断，部分方法如insert的参数列表不完整，但摘要已基于可见内容生成。",
+  "line_count": 110,
+  "file_hash": null,
+  "embedding": null
+}

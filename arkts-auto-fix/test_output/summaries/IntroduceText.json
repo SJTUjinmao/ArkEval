@@ -1,0 +1,17 @@
+{
+  "file_name": "IntroduceText.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/views/text/IntroduceText.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "IntroduceText"
+  ],
+  "state_management": [],
+  "dependencies": [
+    "import { BaseConstants } from '../../constants/BaseConstants';"
+  ],
+  "summary": "该文件定义了一个名为IntroduceText的组件，用于在应用中创建半透明文本元素，设置字体、颜色和对齐方式。主要功能包括文本内容的显示和样式配置，通过属性实现动态调整样式。该组件在应用中用于提供文本内容并支持样式自定义，增强用户界面的可读性和灵活性。\n\n（检查是否满足要求：1个主要功能，主要组件或类，应用中的作用，且符合1-3句话。",
+  "line_count": 34,
+  "file_hash": null,
+  "embedding": null
+}

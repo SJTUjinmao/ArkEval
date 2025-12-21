@@ -1,0 +1,17 @@
+{
+  "file_name": "MessageDataSource.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/viewmodel/Message/MessageDataSource.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { SortedHashMap } from '@ohos/base';",
+    "import { Message } from '../../entities/Message';",
+    "import { IDataSourcePrefetching } from '@kit.ArkUI';"
+  ],
+  "summary": "以\"\"\"\"\"\" 开头，以\"\"}}\"\"结束。\n\n注意：如果无法确定某些信息，可以省略。 请确保摘要简洁，避免冗余信息。 [unused17]\"\"\"\"\"\"\"  \n该文件定义了`MessageDataSource`类，用于管理消息数据的存储、缓存和更新，支持消息的添加、删除、查询及通知数据变化。主要功能包括设置消息、获取消息、删除消息、监听数据变化等。",
+  "line_count": 146,
+  "file_hash": null,
+  "embedding": null
+}

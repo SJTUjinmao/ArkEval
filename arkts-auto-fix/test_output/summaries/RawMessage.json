@@ -1,0 +1,16 @@
+{
+  "file_name": "RawMessage.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/entities/RawMessage.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import sql from \"@liushengyi/smartdb\"",
+    "import { NativeRawMessage } from 'libhomogrape.so'"
+  ],
+  "summary": "答案：\n\nRawMessage.ets 文件定义了一个用于处理原始消息数据的类，包含 chatId、messageId 和 rawMessage 属性，并提供了从原生数据创建 RawMessage 实例的方法。该类通过 SQL 注解标记为整数和二进制列，用于在数据库中存储原始二进制消息内容。在应用中，它充当消息序列化与数据库映射的桥梁，确保数据正确存储和检索。",
+  "line_count": 21,
+  "file_hash": null,
+  "embedding": null
+}

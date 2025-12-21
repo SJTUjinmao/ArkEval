@@ -1,0 +1,39 @@
+{
+  "file_name": "ChatList.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Chat/ChatList.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ChatList"
+  ],
+  "state_management": [
+    "@Consume chatDataSource: ChatDataSource;",
+    "@Consume currentChatId: string;",
+    "@Link isShowSearchIcon: boolean;",
+    "@Link isFromHideSearchBar: boolean;",
+    "@Consume('pageInfo') pageInfo: NavPathStack;",
+    "@State searchValue: string = '';",
+    "@Consume isAppFirstLoad: boolean;",
+    "@Consume currentForumId: string;",
+    "@State chatItemTransitionEffect: TransitionEffect | undefined = undefined;"
+  ],
+  "dependencies": [
+    "import { Adaptive, BaseConstants, BreakpointConstants, Logger, mapToRecord, Vibrator } from '@ohos/base';",
+    "import { ChatItem } from './ChatItem';",
+    "import { HomeTopSearch } from '../common/HomeTopSearch';",
+    "import { HomeConstants } from '../../constants/HomeConstants';",
+    "import { deviceInfo } from '@kit.BasicServicesKit';",
+    "import { loadCachedChats, UpdateChatCallback } from '../../viewmodel/Chat/ChatViewModel';",
+    "import { hilog } from '@kit.PerformanceAnalysisKit';",
+    "import { ChatType, loadChatsWithOffset } from 'libhomogrape.so';",
+    "import { Chat } from '../../entities/Chat';",
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { ChatDataSource } from '../../viewmodel/Chat/ChatDataSource';",
+    "import { curves } from '@kit.ArkUI';",
+    "import { Home } from '../../../../../Index';"
+  ],
+  "summary": "以“”开头，以句号；结尾。\n\n\n该文件定义了应用中的聊天列表组件，负责管理聊天会话、消息列表和相关状态。主要包含ChatList组件及其子组件，处理用户界面展示和交互逻辑，以及与数据源和视图模型的交互。在应用中起到协调聊天功能、提供消息浏览和搜索功能的重要作用。 [unused17]\n该文件定义了应用中的聊天列表组件，负责管理聊天会话、消息列表和相关状态。",
+  "line_count": 254,
+  "file_hash": null,
+  "embedding": null
+}

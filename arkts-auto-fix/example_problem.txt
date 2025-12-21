@@ -1,0 +1,15 @@
+在当前 HarmonyOS 应用开发过程中，登录流程中的多个页面（包括手机号输入、验证码验证和密码输入）缺乏视觉反馈与用户引导，导致用户体验较为单调、交互感不足。同时，构建配置中使用的签名材料路径为项目本地相对路径，不利于团队协作与 CI/CD 自动化流程；此外，SDK 兼容性版本信息未同步更新，可能引发运行时兼容性问题。
+
+为提升登录流程的交互体验并增强项目构建的可维护性与标准化程度，需完成以下改进：
+
+1. 引入 Lottie 动画：在 PhoneNumber.ets、VerifyCode.ets 和 Password.ets 页面中分别集成与业务语义匹配的 Lottie 动画（如拨号鸭、验证码通知鸭、解锁鸭），使用远程 JSON 资源，并通过 LottieController 实现自动播放与循环，以增强界面生动性和用户引导效果。
+2. 更新依赖与构建配置：
+将 compatibleSdkVersion 从 5.0.0(12) 升级至 5.0.3(15)，并新增 targetSdkVersion 字段以明确目标 SDK。
+将签名配置（certpath、profile、storeFile 等）从项目内 ./signing/ 目录迁移至开发者本地标准 OHOS 配置目录（C:\Users\wt\.ohos\config\...），使用系统生成的调试证书别名 debugKey，并更新对应的密码哈希值。
+3. 依赖管理同步：
+在 oh-package.json5 中新增对 @jjr/lottie_component@^1.0.8 的依赖。
+在 oh-package-lock.json5 中锁定该组件及其底层依赖 @ohos/lottie@2.0.23 的版本与完整性校验信息，确保构建一致性。
+4. 优化首页聊天列表布局：在 ChatList.ets 中动态监听顶部搜索栏高度变化，并插入占位 ListItem，防止内容被固定搜索栏遮挡，提升滚动体验。
+
+综上，本问题旨在通过引入富媒体动画、标准化构建签名配置、升级 SDK 版本及优化 UI 布局，全面提升应用的用户体验、工程健壮性与团队协作效率。
+

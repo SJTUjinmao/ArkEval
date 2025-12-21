@@ -1,0 +1,31 @@
+
+================================================================================
+# Patch 1: BreakpointType.ets
+# File: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+================================================================================
+--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
++++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+@@ -33,7 +33,8 @@
+     }
+     if (currentBreakpoint === BreakpointConstants.BREAKPOINT_LG) {
+       return this.lg;
+-    } else {
++    } else if (currentBreakpoint === BreakpointConstants.BREAKPOINT_SM) {
+       return this.sm;
+     }
++    return this.md;
+   }
+
+
+================================================================================
+# Patch 3: KV.ets
+# File: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets
+================================================================================
+--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets
++++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets
+@@ -1,3 +1 @@
+-  public has(key: string): boolean {
+-    return this.dataPreferences.hasSync(key);
+-  }
++public has(key: string): boolean {\n  return this.dataPreferences.hasSync(key);\n}
+

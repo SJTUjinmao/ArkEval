@@ -1,0 +1,18 @@
+{
+  "file_name": "ChatDetailViewModel.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/viewmodel/Chat/ChatDetailViewModel.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { Want, common } from '@kit.AbilityKit';",
+    "import { BusinessError } from '@kit.BasicServicesKit';",
+    "import { hilog } from '@kit.PerformanceAnalysisKit';",
+    "import { Logger } from '@ohos/base';"
+  ],
+  "summary": "请用中文输出。\n\n\n该文件定义了一个名为 ChatViewModel 的类，用于管理聊天界面的功能，包括启动应用内的小程序（AppletAbility 和 DocumentAbility）。该类提供了启动不同能力的方法，并处理启动过程中的错误日志记录。在应用中，它主要用于协调和管理聊天界面与小程序之间的交互。",
+  "line_count": 61,
+  "file_hash": null,
+  "embedding": null
+}

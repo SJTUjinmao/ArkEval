@@ -1,0 +1,16 @@
+{
+  "file_name": "AdaptiveViewModel.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/viewmodel/AdaptiveViewModel.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { BaseConstants as Constants } from '../constants/BaseConstants';",
+    "import { BreakpointType } from '../utils/Breakpoint/BreakpointType';"
+  ],
+  "summary": "答案：\n\nAdaptiveViewModel 是一个用于计算不同屏幕尺寸适配值的工具类，主要提供一系列静态方法以获取特定断点下的布局参数。该文件包含多个方法，如 CircleImageOneWidth、HomeTabHeight等，用于在应用不同分辨率下动态计算视图尺寸。这些方法在应用中实现响应式布局，确保UI元素在不同设备上正确显示。",
+  "line_count": 76,
+  "file_hash": null,
+  "embedding": null
+}

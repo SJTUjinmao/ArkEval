@@ -1,0 +1,101 @@
+
+================================================================================
+# Patch 1: BreakpointType.ets
+# File: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+================================================================================
+--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
++++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Breakpoint/BreakpointType.ets
+@@ -33,7 +33,8 @@
+     }
+     if (currentBreakpoint === BreakpointConstants.BREAKPOINT_LG) {
+       return this.lg;
+-    } else {
++    } else if (currentBreakpoint === BreakpointConstants.BREAKPOINT_SM) {
+       return this.sm;
+     }
++    return this.md;
+   }
+
+
+================================================================================
+# Patch 2: ComponentAttrUtils.ets
+# File: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/ComponentAttrUtils.ets
+================================================================================
+--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/ComponentAttrUtils.ets
++++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/ComponentAttrUtils.ets
+@@ -8,30 +8,28 @@
+-  public static getRectInfoById(context: UIContext, id: string): RectInfoInPx {
+-    if (!context || !id) {
+-      throw Error('object is empty');
+-    }
+-    let componentInfo: componentUtils.ComponentInfo = context.getComponentUtils().getRectangleById(id);
++public static getRectInfoById(context: UIContext, id: string): RectInfoInPx {
++  if (!context || !id) {
++    throw Error('object is empty');
++  }
++  let componentInfo: componentUtils.ComponentInfo = context.getComponentUtils().getRectangleById(id);
+ 
+-    if (!componentInfo) {
+-      throw Error('object is empty');
+-    }
++  if (!componentInfo) {
++    throw Error('object is empty');
++  }
+ 
+-    let rstRect: RectInfoInPx = new RectInfoInPx();
+-    const widthScaleGap = componentInfo.size.width * (1 - componentInfo.scale.x) / 2;
+-    const heightScaleGap = componentInfo.size.height * (1 - componentInfo.scale.y) / 2;
+-    rstRect.left = componentInfo.translate.x + componentInfo.windowOffset.x + widthScaleGap;
+-    rstRect.top = componentInfo.translate.y + componentInfo.windowOffset.y + heightScaleGap;
+-    rstRect.right =
+-      componentInfo.translate.x + componentInfo.windowOffset.x + componentInfo.size.width - widthScaleGap;
+-    rstRect.bottom =
+-      componentInfo.translate.y + componentInfo.windowOffset.y + componentInfo.size.height - heightScaleGap;
+-    rstRect.width = rstRect.right - rstRect.left;
+-    rstRect.height = rstRect.bottom - rstRect.top;
+-    return {
+-      left: rstRect.left,
+-      right: rstRect.right,
+-      top: rstRect.top,
+-      bottom: rstRect.bottom,
+-      width: rstRect.width,
+-      height: rstRect.height
+-    }
+-  }
++  let rstRect: RectInfoInPx = new RectInfoInPx();
++  const widthScaleGap = componentInfo.size.width * (1 - componentInfo.scale.x) / 2;
++  const heightScaleGap = componentInfo.size.height * (1 - componentInfo.scale.y) / 2;
++  rstRect.left = componentInfo.translate.x + componentInfo.windowOffset.x + widthScaleGap;
++  rstRect.top = componentInfo.translate.y + componentInfo.windowOffset.y + heightScaleGap;
++  rstRect.right = componentInfo.translate.x + componentInfo.windowOffset.x + componentInfo.size.width - widthScaleGap;
++  rstRect.bottom = componentInfo.translate.y + componentInfo.windowOffset.y + componentInfo.size.height - heightScaleGap;
++  rstRect.width = rstRect.right - rstRect.left;
++  rstRect.height = rstRect.bottom - rstRect.top;
++  return {
++    left: rstRect.left,
++    right: rstRect.right,
++    top: rstRect.top,
++    bottom: rstRect.bottom,
++    width: rstRect.width,
++    height: rstRect.height
++  }
++}
+
+
+================================================================================
+# Patch 3: Database.ets
+# File: /root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Database/Database.ets
+================================================================================
+--- a//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Database/Database.ets
++++ b//root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Database/Database.ets
+@@ -1,8 +1 @@
+-  public static async init(context: Context) {
+-    try {
+-      Database.rdb = await relationalStore.getRdbStore(context, Database.STORE_CONFIG);
+-      Logger.info('Succeeded in getting RdbStore.');
+-    } catch (err) {
+-      Logger.error(`Failed to get RdbStore. Code:${err.code}, message:${err.message}`);
+-    }
+-  }
++  public static async init(context: Context) {\n    try {\n      if (Database.rdb == null) {\n        Database.rdb = await relationalStore.getRdbStore(context, Database.STORE_CONFIG);\n        Logger.info('Succeeded in getting RdbStore.');\n      }\n    } catch (err) {\n      Logger.error("Failed to get RdbStore. Code:${err.code}, message:${err.message}");\n    }\n  }
+

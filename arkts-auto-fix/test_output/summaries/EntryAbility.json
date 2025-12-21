@@ -1,0 +1,25 @@
+{
+  "file_name": "EntryAbility.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/products/phone/src/main/ets/entryability/EntryAbility.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { ConfigurationConstant, UIAbility } from '@kit.AbilityKit';",
+    "import { hilog } from '@kit.PerformanceAnalysisKit';",
+    "import { display, KeyboardAvoidMode, window } from '@kit.ArkUI';",
+    "import { AsyncCallback, BusinessError, commonEventManager } from '@kit.BasicServicesKit';",
+    "import { BaseConstants, BreakpointConstants, Logger, KV, Database, delay, WindowUtil } from '@ohos/base/Index';",
+    "import { deviceInfo } from '@kit.BasicServicesKit';",
+    "import { registerDevice, run, stop, reconnect, EventConstants } from '@ohos/home'",
+    "import { pushService } from '@kit.PushKit';",
+    "import { emitter } from '@kit.BasicServicesKit';",
+    "import AppDB from '../AppDB';",
+    "import { ImageKnife } from '@ohos/imageknife';"
+  ],
+  "summary": "请确保摘要内容准确，不包含任何未在代码中出现的信息。\n\n\n```\n该文件定义了一个名为EntryAbility的UIAbility类，用于管理应用中的窗口和视图跳转。它处理应用在前台时的窗口调整、事件订阅、会话管理以及设备信息获取功能，是应用启动和运行过程中重要的核心组件。\n```",
+  "line_count": 263,
+  "file_hash": null,
+  "embedding": null
+}

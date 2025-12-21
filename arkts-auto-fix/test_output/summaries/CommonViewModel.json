@@ -1,0 +1,13 @@
+{
+  "file_name": "CommonViewModel.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/viewmodel/CommonViewModel.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [],
+  "summary": "用中文输出。  仅使用中文，不要使用英文。\n\n注意：请确保摘要简洁明了，避免冗余信息。  仅使用中文，不要使用英文。\n\n该文件定义了一个名为TabInfoModel的接口，用于描述标签页的基本信息，包括索引、图片、选中图片和标题，并作为资源模型在应用中使用。",
+  "line_count": 23,
+  "file_hash": null,
+  "embedding": null
+}

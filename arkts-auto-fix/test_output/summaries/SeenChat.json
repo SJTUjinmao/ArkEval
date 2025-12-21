@@ -1,0 +1,17 @@
+{
+  "file_name": "SeenChat.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/entities/SeenChat.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import sql from '@liushengyi/smartdb';",
+    "import { Base64 } from '@ohos/base64';",
+    "import { NativeSeenChat, ChatType } from 'libhomogrape.so';"
+  ],
+  "summary": "[unused16]好的，我现在需要处理用户提供的SeenChat.ets文件，并生成一个简洁的摘要。首先，我得仔细阅读代码，理解它的结构和功能。\n\n首先，这个文件导出了一个SeenChat类，看起来是用来映射数据库中的某个表。类中的属性都是带有SQL注解的，比如@sql.SqlColumn，这说明这些属性对应数据库中的列。",
+  "line_count": 96,
+  "file_hash": null,
+  "embedding": null
+}

@@ -1,0 +1,15 @@
+{
+  "file_name": "DatabaseConstants.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/constants/DatabaseConstants.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { Database } from '@ohos/base';"
+  ],
+  "summary": "答案：\n\n1. 该文件定义了数据库常量，用于存储和管理聊天和消息表结构。\n2. 包含创建聊天表、消息表、原始消息表及索引的SQL语句常量。\n3. 作为数据库初始化的基础，确保表和索引在应用启动时正确创建。\n\n请确保答案符合上述要求，并且只返回摘要文本，不要包含其他说明。",
+  "line_count": 107,
+  "file_hash": null,
+  "embedding": null
+}

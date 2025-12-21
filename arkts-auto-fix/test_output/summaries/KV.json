@@ -1,0 +1,15 @@
+{
+  "file_name": "KV.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/KV/KV.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { preferences } from '@kit.ArkData';"
+  ],
+  "summary": "请用中文输出。\n\n首先，我需要仔细阅读用户提供的代码，理解其功能和结构。代码是一个TypeScript类，名为KV，位于KV.ets文件中。它导入了preferences模块，并定义了几个方法：has、put、get、delete。\n\n主要功能方面，这个类看起来是用于与某种本地存储交互的，可能是持久化存储，比如localStorage或IndexedDB。",
+  "line_count": 29,
+  "file_hash": null,
+  "embedding": null
+}

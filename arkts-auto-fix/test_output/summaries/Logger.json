@@ -1,0 +1,15 @@
+{
+  "file_name": "Logger.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/Logger/Logger.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { hilog } from '@kit.PerformanceAnalysisKit';"
+  ],
+  "summary": "请用中文输出。\n\n\n该文件定义了一个名为 Logger 的类，用于记录不同服务域的日志信息，支持调试、信息和警告等不同级别的日志输出。主要应用于应用中需要日志记录的场景，通过使用 hilog 工具实现性能分析。该类在应用中负责统一管理日志格式和前缀，确保日志信息清晰可读。该文件还包含必要的开源许可声明，遵循 Apache License 2.0 协议。",
+  "line_count": 52,
+  "file_hash": null,
+  "embedding": null
+}

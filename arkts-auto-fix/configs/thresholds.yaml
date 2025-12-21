@@ -1,0 +1,24 @@
+# 各类阈值配置
+# Thresholds configuration for A/B testing and parameter tuning
+
+# 相似度搜索阈值
+similarity:
+  top_k_files: 5  # 返回的 top-k 文件数量
+  top_n_functions: 10  # 返回的 top-n 函数数量
+  embedding_score_threshold: 0.5  # 嵌入相似度阈值
+
+# LLM 过滤阈值
+llm_filter:
+  rerank_threshold: 0.6  # 重排序阈值
+  confidence_threshold: 0.7  # 置信度阈值
+
+# 补丁生成阈值
+patch_generation:
+  max_retries: 3  # 最大重试次数
+  timeout: 300  # 超时时间（秒）
+
+# 验证阈值
+verification:
+  compile_timeout: 60  # 编译超时时间（秒）
+  test_timeout: 120  # 测试超时时间（秒）
+

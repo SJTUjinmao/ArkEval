@@ -1,0 +1,13 @@
+{
+  "file_name": "BreakpointConstants.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/constants/BreakpointConstants.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [],
+  "summary": "用中文输出。\n\n该文件定义了一个名为BreakpointConstants的常量类，用于存储不同设备断点尺寸和布局参数。主要功能是提供响应式设计所需的常量值，包括设备尺寸范围和网格布局配置。在应用中用于控制布局适配和屏幕适配逻辑。[unused17]该文件定义了一个名为 `BreakpointConstants` 的常量类，用于集中管理响应式设计中的断点尺寸和布局参数。",
+  "line_count": 49,
+  "file_hash": null,
+  "embedding": null
+}

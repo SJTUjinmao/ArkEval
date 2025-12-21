@@ -1,0 +1,15 @@
+{
+  "file_name": "CircleIcon.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/views/image/CircleIcon.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "CircleButton"
+  ],
+  "state_management": [],
+  "dependencies": [],
+  "summary": "CircleButton 组件用于创建带有圆形样式的按钮，采用 SymbolSpan 显示系统图标 \"sys.symbol.more\"。该组件在应用中作为可交互的 UI 元素，提供符合设计规范的圆形按钮功能。 \n\n解析： \n- 这个文件定义了一个名为 CircleButton 的组件，它继承自 Button 类并设置了圆形样式。",
+  "line_count": 14,
+  "file_hash": null,
+  "embedding": null
+}

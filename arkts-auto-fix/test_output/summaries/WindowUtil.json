@@ -1,0 +1,18 @@
+{
+  "file_name": "WindowUtil.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/common/base/src/main/ets/utils/WindowUtil.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [],
+  "state_management": [],
+  "dependencies": [
+    "import { deviceInfo } from '@kit.BasicServicesKit';",
+    "import { window } from '@kit.ArkUI';",
+    "import { BaseConstants } from '../constants/BaseConstants';",
+    "import Logger from './Logger/Logger';"
+  ],
+  "summary": "答案： 该文件定义了一个名为 WindowUtil 的工具类，用于管理应用中的窗口相关功能，包括获取、设置窗口尺寸和布局，以及监听窗口大小变化事件。它通过单例模式存储窗口实例，并提供方法供其他组件调用。该文件在应用中充当窗口管理的核心服务，确保窗口操作的兼容性和一致性。 1. 主要功能：管理应用中的窗口相关功能，包括获取窗口尺寸、设置全屏布局、监听窗口大小变化等。",
+  "line_count": 116,
+  "file_hash": null,
+  "embedding": null
+}

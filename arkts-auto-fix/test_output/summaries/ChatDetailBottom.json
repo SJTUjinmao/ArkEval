@@ -1,0 +1,47 @@
+{
+  "file_name": "ChatDetailBottom.ets",
+  "file_path": "/root/PanGUfixerplus/arkts-auto-fix/repos/Homogram/features/home/src/main/ets/views/Chat/ChatDetailBottom.ets",
+  "main_entry": null,
+  "exports": [],
+  "components": [
+    "ChatDetailBottom"
+  ],
+  "state_management": [
+    "@State text: string = \"\";",
+    "@Consume('pageInfo') pageInfo: NavPathStack;",
+    "// @Consume pinnedChatsMap: HashMap<string, Chat>;",
+    "// @Consume chatsMap: Map<string, Chat>;",
+    "@Consume chatDataSource: ChatDataSource;",
+    "@Consume messagesOfChatMap: HashMap<string, MessageDataSource>;",
+    "@Consume discreteChatDetailBlurRadius: number;",
+    "@Consume continuousChatDetailBlurRadius: number;",
+    "@State animate: boolean = false;",
+    "@State shouldShowGrid: boolean = false;",
+    "@Link isShowMediaSheet: boolean;",
+    "@State isShowMediaBarSheet: boolean = false;",
+    "@State selectedMediaCount: number = 0;",
+    "@State currentDetents: number = 0; // 0 means medium, 1 means full",
+    "@State mediaSheetTitle: Resource = $r('app.string.gallery');",
+    "@State selectedMedias: Array<string> = [];",
+    "@Consume currentChatId: string;"
+  ],
+  "dependencies": [
+    "import { BaseConstants } from '@ohos/base/src/main/ets/constants/BaseConstants';",
+    "import { StandardIcon } from '@ohos/base/src/main/ets/views/image/StandardIcon';",
+    "import { HomeConstants } from '../../constants/HomeConstants';",
+    "import { NativeMessage, sendMessage } from 'libhomogrape.so'",
+    "import { Logger } from '@ohos/base';",
+    "import { Chat } from '../../entities/Chat';",
+    "import { Message } from '../../entities/Message';",
+    "import { ChatDetailBottomPhotoPicker } from './ChatDetailBottomPhotoPicker';",
+    "import { ChatDetailBottomMediaSheet } from './ChatDetailBottomMediaSheet';",
+    "import { curves } from '@kit.ArkUI';",
+    "import { HashMap } from '@kit.ArkTS';",
+    "import { ChatDataSource } from '../../viewmodel/Chat/ChatDataSource';",
+    "import { MessageDataSource } from '../../viewmodel/Message/MessageDataSource';"
+  ],
+  "summary": "答案：\n\nChatDetailBottom.ets 文件主要实现聊天界面底部视图的构建，包含消息显示、图片发送功能及媒体选择弹窗等组件。它在应用中负责处理用户聊天时的消息交互和媒体传输流程。 好的，我现在需要处理一个用户关于华为应用开发的问题，具体是关于ChatDetailBottom.ets文件中ChatDetailBottomMediaSheet组件的实现问题。",
+  "line_count": 251,
+  "file_hash": null,
+  "embedding": null
+}
