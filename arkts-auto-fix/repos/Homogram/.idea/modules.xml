@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Homogram.iml" filepath="$PROJECT_DIR$/.idea/modules/Homogram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/base.iml" filepath="$PROJECT_DIR$/.idea/modules/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/home.iml" filepath="$PROJECT_DIR$/.idea/modules/home/home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/phone/phone.iml" filepath="$PROJECT_DIR$/.idea/modules/phone/phone.iml" />
+    </modules>
+  </component>
+</project>

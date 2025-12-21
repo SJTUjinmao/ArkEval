@@ -1,0 +1,20 @@
+{
+  "license": "Apache-2.0",
+  "devDependencies": {},
+  "author": "",
+  "name": "home",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dynamicDependencies": {},
+  "dependencies": {
+    "@ohos/base": "file:../../common/base",
+    "libhomogrape.so": "file:./src/main/native/homogrape/dist",
+    "class-transformer": "^0.5.1",
+    "reflect-metadata": "^0.1.13",
+    "@wolfx/json5": "^2.2.3-rc.1",
+    "@flk/easy-json": "^3.0.5",
+    "@ohos-rs/abort-controller": "^0.0.2",
+    "@ohos/materialprogressbar": "^2.1.1",
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "color": [
+    {
+      "name": "white",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "focus_color",
+      "value": "#0A59F7"
+    },
+    {
+      "name": "background_color_grey",
+      "value": "#F6F6F6"
+    },
+    {
+      "name": "background_color_grey_two",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "background_color_grey_two_bar",
+      "value": "#E99F9B9B"
+    },
+    {
+      "name": "background_color_grey_three",
+      "value": "#8A9097"
+    },
+    {
+      "name": "divider_background_color",
+      "value": "#E6E6E6"
+    },
+    {
+      "name": "background_color_pink",
+      "value": "#FCF7F6"
+    },
+    {
+      "name": "background_color_icon",
+      "value": "#F0A6C3"
+    },
+    {
+      "name": "font_color_one",
+      "value": "#000000"
+    },
+    {
+      "name": "font_color_black_two",
+      "value": "#182431"
+    },
+    {
+      "name": "line_color",
+      "value": "#E7E7E7"
+    },
+    {
+      "name": "tab_clicked_color",
+      "value": "#1698CE"
+    },
+    {
+      "name": "tab_unclicked_color",
+      "value": "#6B6B6B"
+    },
+    {
+      "name": "text_input_default_color",
+      "value": "#99000000"
+    },
+    {
+      "name": "text_input_default_background_color",
+      "value": "#F1F3F5"
+    },
+    {
+      "name": "text_input_default_care_color",
+      "value": "#007DFF"
+    },
+    {
+      "name": "chat_none_icon_bg_color",
+      "value": "#F6F6F6"
+    },
+    {
+      "name": "chat_default_text_color",
+      "value": "#182431"
+    },
+    {
+      "name": "chat_clicked_bg_color",
+      "value": "#33D8D8D8"
+    },
+    {
+      "name": "chat_list_divider_color",
+      "value": "#FFB1B1B1"
+    },
+    {
+      "name": "message_background_color",
+      "value": "#F6F6F6"
+    },
+    {
+      "name": "message_background_color_outgoing",
+      "value": "#E1FFC6"
+    },
+    {
+      "name": "message_reply_to_preview_background_color",
+      "value": "#f8e8e7"
+    },
+    {
+      "name": "message_reply_to_preview_divider_color",
+      "value": "#c65048"
+    },
+    {
+      "name": "message_time_color",
+      "value": "#664F4F4F"
+    }
+  ]
+}

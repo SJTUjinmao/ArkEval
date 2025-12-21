@@ -1,0 +1,500 @@
+{
+  "float": [
+    {
+      "name": "micro_font_size",
+      "value": "10fp"
+    },
+    {
+      "name": "icon_height_one",
+      "value": "24vp"
+    },
+    {
+      "name": "icon_width_one",
+      "value": "24vp"
+    },
+    {
+      "name": "icon_margin_one",
+      "value": "12vp"
+    },
+    {
+      "name": "icon_margin_two",
+      "value": "24vp"
+    },
+    {
+      "name": "main_image_size",
+      "value": "22vp"
+    },
+    {
+      "name": "main_image_size_lg",
+      "value": "24vp"
+    },
+    {
+      "name": "avatar_image_size",
+      "value": "48vp"
+    },
+    {
+      "name": "bar_width",
+      "value": "96vp"
+    },
+    {
+      "name": "tab_size",
+      "value": "76vp"
+    },
+    {
+      "name": "tab_size_lg",
+      "value": "56vp"
+    },
+    {
+      "name": "text_line_height_one",
+      "value": "19fp"
+    },
+    {
+      "name": "text_line_height_three",
+      "value": "14fp"
+    },
+    {
+      "name": "text_line_height_two",
+      "value": "22fp"
+    },
+    {
+      "name": "background_color_grey",
+      "value": "#111111"
+    },
+    {
+      "name": "input_radius_one",
+      "value": "20vp"
+    },
+    {
+      "name": "text_line_height_five",
+      "value": "21fp"
+    },
+    {
+      "name": "smaller_mini_font_size",
+      "value": "11fp"
+    },
+    {
+      "name": "picture_gap",
+      "value": "2vp"
+    },
+    {
+      "name": "home_tab_width",
+      "value": "96vp"
+    },
+    {
+      "name": "home_tab_height",
+      "value": "56vp"
+    },
+    {
+      "name": "home_tab_padding_left",
+      "value": "22vp"
+    },
+    {
+      "name": "home_tab_padding_top",
+      "value": "180vp"
+    },
+    {
+      "name": "home_tab_padding_bottom",
+      "value": "180vp"
+    },
+    {
+      "name": "home_list_width",
+      "value": "22vp"
+    },
+    {
+      "name": "home_tab_font_size",
+      "value": "20fp"
+    },
+    {
+      "name": "font_family_normal",
+      "value": "HarmonyHeiTi"
+    },
+    {
+      "name": "font_family_medium",
+      "value": "HarmonyHeiTi-Medium"
+    },
+    {
+      "name": "font_family_bold",
+      "value": "HarmonyHeiTi-Bold"
+    },
+    {
+      "name": "font_family_semi_bold",
+      "value": "HarmonyHeiTi-SemiBold"
+    },
+    {
+      "name": "font_size_ten",
+      "value": "10fp"
+    },
+    {
+      "name": "font_size_eleven",
+      "value": "11fp"
+    },
+    {
+      "name": "font_size_twelve",
+      "value": "12fp"
+    },
+    {
+      "name": "font_size_fourteen",
+      "value": "14fp"
+    },
+    {
+      "name": "font_size_sixteen",
+      "value": "16fp"
+    },
+    {
+      "name": "font_size_eighteen",
+      "value": "18fp"
+    },
+    {
+      "name": "font_size_twenty",
+      "value": "20fp"
+    },
+    {
+      "name": "font_size_twenty_four",
+      "value": "24fp"
+    },
+    {
+      "name": "font_size_thirty_two",
+      "value": "32fp"
+    },
+    {
+      "name": "icon_height",
+      "value": "40vp"
+    },
+    {
+      "name": "icon_width",
+      "value": "40vp"
+    },
+    {
+      "name": "icon_right",
+      "value": "8vp"
+    },
+    {
+      "name": "user_name_bottom",
+      "value": "6vp"
+    },
+    {
+      "name": "user_message_bottom",
+      "value": "8vp"
+    },
+    {
+      "name": "header_top",
+      "value": "16vp"
+    },
+    {
+      "name": "header_right",
+      "value": "20vp"
+    },
+    {
+      "name": "header_bottom",
+      "value": "16vp"
+    },
+    {
+      "name": "header_left",
+      "value": "24vp"
+    },
+    {
+      "name": "back_icon_top",
+      "value": "19vp"
+    },
+    {
+      "name": "back_icon_left",
+      "value": "26vp"
+    },
+    {
+      "name": "contacts_detail_avatar_height",
+      "value": "124vp"
+    },
+    {
+      "name": "contacts_detail_avatar_top",
+      "value": "84vp"
+    },
+    {
+      "name": "contacts_detail_avatar_border_width",
+      "value": "5vp"
+    },
+    {
+      "name": "contacts_detail_avatar_border_radius",
+      "value": "100"
+    },
+    {
+      "name": "contacts_detail_user_top",
+      "value": "82vp"
+    },
+    {
+      "name": "phone_left",
+      "value": "24vp"
+    },
+    {
+      "name": "phone_icon_right",
+      "value": "24pv"
+    },
+    {
+      "name": "phone_icon_left",
+      "value": "24pv"
+    },
+    {
+      "name": "phone_column_top",
+      "value": "45vp"
+    },
+    {
+      "name": "phone_divider_left",
+      "value": "24vp"
+    },
+    {
+      "name": "phone_divider_right",
+      "value": "24vp"
+    },
+    {
+      "name": "phone_divider_top",
+      "value": "20vp"
+    },
+    {
+      "name": "last_post_left",
+      "value": "24vp"
+    },
+    {
+      "name": "last_post_top",
+      "value": "17vp"
+    },
+    {
+      "name": "images_left",
+      "value": "24vp"
+    },
+    {
+      "name": "images_top",
+      "value": "2vp"
+    },
+    {
+      "name": "images_column_left",
+      "value": "5vp"
+    },
+    {
+      "name": "images_column_right",
+      "value": "5vp"
+    },
+    {
+      "name": "contacts_detail_left",
+      "value": "31vp"
+    },
+    {
+      "name": "contacts_detail_right",
+      "value": "31vp"
+    },
+    {
+      "name": "contacts_detail_column_top",
+      "value": "146vp"
+    },
+    {
+      "name": "alphabet_indexer_right",
+      "value": "16vp"
+    },
+    {
+      "name": "text_input_default_font",
+      "value": "16vp"
+    },
+    {
+      "name": "text_input_height",
+      "value": "40vp"
+    },
+    {
+      "name": "text_input_left",
+      "value": "36vp"
+    },
+    {
+      "name": "text_input_right",
+      "value": "12vp"
+    },
+    {
+      "name": "small_icon_height",
+      "value": "16vp"
+    },
+    {
+      "name": "small_icon_width",
+      "value": "16vp"
+    },
+    {
+      "name": "add_icon_left",
+      "value": "12vp"
+    },
+    {
+      "name": "contacts_item_padding",
+      "value": "3vp"
+    },
+    {
+      "name": "chat_detail_bottom_padding",
+      "value": "10vp"
+    },
+    {
+      "name": "chat_detail_bottom_text_padding",
+      "value": "3vp"
+    },
+    {
+      "name": "chat_detail_bottom_height",
+      "value": "56vp"
+    },
+    {
+      "name": "chat_none_icon_height",
+      "value": "46vp"
+    },
+    {
+      "name": "chat_none_icon_width",
+      "value": "50vp"
+    },
+    {
+      "name": "chat_list_time_padding",
+      "value": "3vp"
+    },
+    {
+      "name": "chat_list_time_width",
+      "value": "40vp"
+    },
+    {
+      "name": "home_tab_top_lg",
+      "value": "6.5vp"
+    },
+    {
+      "name": "home_tab_bottom_lg",
+      "value": "7.5vp"
+    },
+    {
+      "name": "chat_detail_path_right",
+      "value": "-10vp"
+    },
+    {
+      "name": "path_column_top",
+      "value": "10vp"
+    },
+    {
+      "name": "path_column_right",
+      "value": "12vp"
+    },
+    {
+      "name": "path_column_bottom",
+      "value": "10vp"
+    },
+    {
+      "name": "path_column_left",
+      "value": "12vp"
+    },
+    {
+      "name": "path_top",
+      "value": "1vp"
+    },
+    {
+      "name": "path_right",
+      "value": "20vp"
+    },
+    {
+      "name": "path_bottom",
+      "value": "22vp"
+    },
+    {
+      "name": "path_left",
+      "value": "20vp"
+    },
+    {
+      "name": "message_bubble_left",
+      "value": "15vp"
+    },
+    {
+      "name": "message_bubble_right",
+      "value": "16vp"
+    },
+    {
+      "name": "applet_icon_size",
+      "value": "16vp"
+    },
+    {
+      "name": "applet_icon_right",
+      "value": "10vp"
+    },
+    {
+      "name": "applet_title_bottom",
+      "value": "7vp"
+    },
+    {
+      "name": "applet_introduce_bottom",
+      "value": "8vp"
+    },
+    {
+      "name": "applet_image_height",
+      "value": "138vp"
+    },
+    {
+      "name": "applet_image_width",
+      "value": "186vp"
+    },
+    {
+      "name": "applet_image_bottom",
+      "value": "6vp"
+    },
+    {
+      "name": "document_text_width",
+      "value": "132vp"
+    },
+    {
+      "name": "document_icon_size",
+      "value": "36vp"
+    },
+    {
+      "name": "document_icon_right",
+      "value": "11vp"
+    },
+    {
+      "name": "document_icon_bottom",
+      "value": "4vp"
+    },
+    {
+      "name": "document_text_top",
+      "value": "4vp"
+    },
+    {
+      "name": "document_text_bottom",
+      "value": "10vp"
+    },
+    {
+      "name": "divider_bottom",
+      "value": "1vp"
+    },
+    {
+      "name": "document_small_icon_size",
+      "value": "12vp"
+    },
+    {
+      "name": "document_small_icon_right",
+      "value": "6vp"
+    },
+    {
+      "name": "document_introduce_top",
+      "value": "-2vp"
+    },
+    {
+      "name": "document_width",
+      "value": "180vp"
+    },
+    {
+      "name": "document_bottom",
+      "value": "-7vp"
+    },
+    {
+      "name": "chat_default_text_line",
+      "value": "21vp"
+    },
+    {
+      "name": "zero",
+      "value": "0vp"
+    },
+    {
+      "name": "tab_content_pb",
+      "value": "28vp"
+    },
+    {
+      "name": "device_padding_top",
+      "value": "36vp"
+    },
+    {
+      "name": "chat_list_divider_stroke_width",
+      "value": "1vp"
+    }
+  ]
+}

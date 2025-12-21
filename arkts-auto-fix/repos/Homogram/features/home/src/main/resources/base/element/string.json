@@ -1,0 +1,48 @@
+{
+  "string": [
+    {
+      "name": "shared_desc",
+      "value": "description"
+    },
+    {
+      "name": "message",
+      "value": "消息"
+    },
+    {
+      "name": "contacts",
+      "value": "通讯录"
+    },
+    {
+      "name": "SocialCircle",
+      "value": "朋友圈"
+    },
+    {
+      "name": "me",
+      "value": "我的"
+    },
+    {
+      "name": "gallery",
+      "value": "图库"
+    },
+    {
+      "name": "file",
+      "value": "文件"
+    },
+    {
+      "name": "location",
+      "value": "位置"
+    },
+    {
+      "name": "poll",
+      "value": "投票"
+    },
+    {
+      "name": "contact",
+      "value": "联系人"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "搜索"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "module": {
+    "name": "base",
+    "type": "har",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "metadata": [
+
+      {
+
+        "name": "avoid_cutout",
+
+        "value": "true",
+
+      }
+
+    ]
+  }
+}

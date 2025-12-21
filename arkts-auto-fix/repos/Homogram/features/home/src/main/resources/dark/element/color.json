@@ -1,0 +1,24 @@
+{
+  "color": [
+    {
+      "name": "message_background_color",
+      "value": "#302333"
+    },
+    {
+      "name": "message_background_color_outgoing",
+      "value": "#4667f6"
+    },
+    {
+      "name": "message_reply_to_preview_background_color",
+      "value": "#494046"
+    },
+    {
+      "name": "message_reply_to_preview_divider_color",
+      "value": "#d96f71"
+    },
+    {
+      "name": "message_time_color",
+      "value": "#66E3E3E3"
+    }
+  ]
+}

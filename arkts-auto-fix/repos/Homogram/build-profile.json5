@@ -1,0 +1,76 @@
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          //          "nativeCompiler": "BiSheng",
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storePassword": "0000001D0B4CB13D1A547A0F2FF91DA382162D9006D2102203C7A17AC2BAAE459BD1DA8FA84240C2169CBFCA02",
+          "certpath": "./signing/Homogram_Debug.cer",
+          "keyAlias": "keystore",
+          "keyPassword": "0000001DA32D34919F41359B0CD97331538758E70FC5BB327E35EDCBA4202D3A493649B532EA4FE31DF0DB7B74",
+          "profile": "./signing/homogram_debug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./signing/keystore.p12"
+        }
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "phone",
+      "srcPath": "./products/phone",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "srcPath": "./features/home",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "base",
+      "srcPath": "./common/base",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
