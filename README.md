@@ -1,23 +1,45 @@
 <div align="center">
 
-# ArkEval
+# 🔧 ArkEval
 
-**面向真实 ArkTS/OpenHarmony Issue 的可执行仓库级自动程序修复基准**
+### 面向真实 ArkTS/OpenHarmony Issue 的可执行仓库级自动程序修复基准
 
-[![Paper](https://img.shields.io/badge/ASE-2026-7b1fa2.svg)](https://conf.researchr.org/details/ase-2026/ase-2026-research-track/218/ArkEval-Benchmarking-and-Evaluating-Automated-Code-Repair-for-ArkTS)
-[![arXiv](https://img.shields.io/badge/arXiv-2602.08866-b31b1b.svg)](https://arxiv.org/abs/2602.08866)
-[![Instances](https://img.shields.io/badge/instances-502-0969da.svg)](#数据集)
-[![Language](https://img.shields.io/badge/language-ArkTS-e34c26.svg)](https://developer.huawei.com/consumer/cn/arkts/)
+[![ASE 2026](https://img.shields.io/badge/ASE_2026-Accepted-8a2be2?style=for-the-badge)](https://conf.researchr.org/details/ase-2026/ase-2026-research-track/218/ArkEval-Benchmarking-and-Evaluating-Automated-Code-Repair-for-ArkTS)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.08866-b31b1b?style=for-the-badge&logo=arxiv)](https://arxiv.org/abs/2602.08866)
+[![ArkTS](https://img.shields.io/badge/Language-ArkTS-0a59f7?style=for-the-badge&logo=huawei)](https://developer.huawei.com/consumer/cn/arkts/)
+[![Executable](https://img.shields.io/badge/Oracle-Executable-16803c?style=for-the-badge&logo=checkmarx)](#test-construction)
 
-[论文页面](https://conf.researchr.org/details/ase-2026/ase-2026-research-track/218/ArkEval-Benchmarking-and-Evaluating-Automated-Code-Repair-for-ArkTS) · [arXiv](https://arxiv.org/abs/2602.08866) · [复现包](https://figshare.com/s/badd428ce21f70f244cb?file=61473181) · [快速开始](#快速开始)
+**[📄 论文](https://conf.researchr.org/details/ase-2026/ase-2026-research-track/218/ArkEval-Benchmarking-and-Evaluating-Automated-Code-Repair-for-ArkTS)** ·
+**[📕 arXiv](https://arxiv.org/abs/2602.08866)** ·
+**[📦 复现包](https://figshare.com/s/badd428ce21f70f244cb?file=61473181)** ·
+**[🚀 快速开始](#quick-start)**
 
 </div>
 
+---
+
 ArkEval 将 ArkTS 修复从零散案例转化为可执行、可比较、可持续迭代的 LLM4Code 研究任务。它提供 502 个真实 Issue 修复实例、可追溯版本对、参考开发者补丁和行为级复现测试，同时覆盖缺陷定位、补丁生成、编译验证与真实测试执行。对于长期缺少标准评价信号的低语料语言，ArkEval 不只是一个数据集：它给出了可以用于模型比较、Agent 搜索、训练反馈和失败归因的统一实验基础。
 
-![ArkEval 数据概览](assets/dataset-overview.png)
+<table align="center">
+  <tr>
+    <td align="center"><strong>🧩 502</strong><br><sub>真实修复实例</sub></td>
+    <td align="center"><strong>🏛️ 9</strong><br><sub>公开源仓库</sub></td>
+    <td align="center"><strong>📱 149</strong><br><sub>OpenHarmony 应用</sub></td>
+    <td align="center"><strong>🧪 502</strong><br><sub>可执行复现测试</sub></td>
+    <td align="center"><strong>🤖 8</strong><br><sub>主实验模型</sub></td>
+  </tr>
+</table>
 
-## 核心贡献
+> [!IMPORTANT]
+> ArkEval 将“能够编译”和“真正修复”分开评价：`Compile@1` 衡量构建有效性，`Pass@1` 由行为级复现测试自动判定。
+
+<p align="center">
+  <img src="assets/dataset-overview.png" width="920" alt="ArkEval 数据概览" />
+</p>
+
+<a id="contributions"></a>
+
+## ✨ 核心贡献
 
 - **据我们所知，首个面向真实 ArkTS/OpenHarmony Issue 修复的可执行仓库级基准**：502 个实例来自 9 个公开仓库，包含真实缺陷版本、参考开发者补丁与复现测试。
 - **行为正确性优先**：同时报告定位、`Compile@1` 与 `Pass@1`，避免把“补丁能够编译”误认为“缺陷已经修复”。
@@ -25,7 +47,9 @@ ArkEval 将 ArkTS 修复从零散案例转化为可执行、可比较、可持�
 - **完整的 ArkTS 修复链路**：提供 ArkTS-aware 切分、Embedding 检索、两阶段模型筛选、依赖补全、Patch-only 生成、可选官方知识 RAG 与自动执行评测。
 - **为 ArkTS 修复 Agent 提供奖励信号**：可执行 Oracle 能直接支持监督微调、强化学习、搜索策略和 ArkAgent 一类专用修复系统的持续迭代。
 
-## 数据集
+<a id="dataset"></a>
+
+## 📊 数据集
 
 | 指标 | 数值 |
 |---|---:|
@@ -48,15 +72,21 @@ fixed_tests, f2p_tests, run_result
 
 其中 `fix_patch` 是经整理的参考开发者补丁，`test_patch` 是可执行复现测试；模型评测时不会向修复模型暴露这两项。
 
-## 测试构建
+<a id="test-construction"></a>
+
+## 🧪 测试构建
 
 测试不是从补丁中机械提取，而是围绕 Issue 描述中的外部可观察行为构建。候选测试只有在三个 Agent 一致通过、相同环境下满足 `base + test = FAIL` 与 `base + reference patch + test = PASS`，并通过三名专家的最终黑盒语义审核后，才进入基准。
 
-![ArkEval 测试构建闭环](assets/test-construction-workflow.png)
+<p align="center">
+  <img src="assets/test-construction-workflow.png" width="920" alt="ArkEval 测试构建闭环" />
+</p>
 
 六轮全基准迭代中，每轮接收率由 V1 的 `87/502 (17.33%)` 提升到 V6 的 `28/34 (82.35%)`；剩余 6 个长尾实例在定向反馈后通过相同门禁完成闭环。
 
-## 定位与修复框架
+<a id="repair-framework"></a>
+
+## 🛠️ 定位与修复框架
 
 1. 对基准缺陷版本扫描 `.ets` 与 `.ts` 文件，并进行 ArkTS-aware 结构切分。
 2. 使用 Qwen3-Embedding-8B 编码代码块，在 Milvus 中检索 Top-k 候选文件。
@@ -64,11 +94,15 @@ fixed_tests, f2p_tests, run_result
 4. 模型仅输出统一 Diff；可选 RAG 只提供华为/OpenHarmony 官方语法、编译错误分析和示例代码。
 5. 依次执行补丁适用性、Hvigor 编译、复现测试与可用回归测试，得到 `Compile@1` 和 `Pass@1`。
 
-![ArkEval 定位与修复架构](assets/repair-architecture.png)
+<p align="center">
+  <img src="assets/repair-architecture.png" width="820" alt="ArkEval 定位与修复架构" />
+</p>
 
 共享 Embedding 阶段在 502 个 Issue 上取得 `304/502 (60.56%)` 的候选文件 Hit@10。该值衡量 Top-10 中是否至少包含一个参考修复相关文件，不等同于最终定位准确率。
 
-## 基准结果
+<a id="results"></a>
+
+## 📈 基准结果
 
 下表为论文主实验：8 个模型在同一定位引导、RAG-off、单次补丁协议下完成全部 502 个实例。
 
@@ -85,7 +119,9 @@ fixed_tests, f2p_tests, run_result
 
 最高编译率和最高行为通过率由不同模型取得，说明编译成功不能替代行为级修复评价。四模型配对实验中，官方知识 RAG 带来 `4.38–11.75` 个百分点的 Compile@1 增益和 `0.80–3.19` 个百分点的 Pass@1 增益；这些结果是描述性比较，不主张统计显著性。
 
-## 仓库结构
+<a id="repository-layout"></a>
+
+## 🗂️ 仓库结构
 
 ```text
 ArkEval/
@@ -104,7 +140,9 @@ ArkEval/
 └── requirements.txt
 ```
 
-## 快速开始
+<a id="quick-start"></a>
+
+## 🚀 快速开始
 
 ### 1. 安装依赖
 
@@ -153,14 +191,18 @@ python .\evaluation\run_llm_patch_eval.py `
 
 这是需要真实 OpenHarmony 工程、SDK 和设备环境的全链路评测，不支持用静态检查或补丁文本匹配替代运行结果。更完整的环境说明见各组件 README：[`localization`](localization/README.md)、[`arkfix`](arkfix/README.md) 和 [`repair engine`](arkfix/repair_engine/README.md)。
 
-## 复现边界
+<a id="reproducibility"></a>
+
+## 🔬 复现边界
 
 - GitHub 目录提供核心源码、主数据集和展示素材，不打包约 20 GB 的 SDK、依赖缓存、仓库池与运行输出。
 - 复现者需要自行安装 DevEco/OpenHarmony 工具链并恢复公开源仓库；论文复现包提供审计材料与实验记录。
 - 主八模型结果均为 RAG-off；RAG 结果是独立的四模型配对实验，不与主榜混合。
 - `Pass@1` 完全由自动 Oracle 判定：有现有回归套件时要求编译、复现测试和回归测试全部通过；没有现有回归套件时要求编译与复现测试通过。
 
-## 引用
+<a id="citation"></a>
+
+## 📚 引用
 
 如果 ArkEval 对你的研究有帮助，请引用：
 
@@ -174,6 +216,6 @@ python .\evaluation\run_llm_patch_eval.py `
 }
 ```
 
-## 致谢
+## 🙏 致谢
 
 本工作得到国家自然科学基金项目（NSFC 62402313）的部分资助。
