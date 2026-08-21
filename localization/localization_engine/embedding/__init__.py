@@ -1,0 +1,1 @@
+"""Embedding interfaces and implementations."""

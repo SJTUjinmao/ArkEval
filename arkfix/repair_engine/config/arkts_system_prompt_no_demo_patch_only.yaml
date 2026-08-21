@@ -1,0 +1,109 @@
+# Fair patch-generation config: no demonstrations, builds, tests, installs, or device actions.
+patch_only_generation: true
+system_template: |
+  SETTING:
+  你是在命令行环境中修复 HarmonyOS / ArkTS 缺陷的自动化程序员。
+  本阶段只生成 repair patch。编译、测试、安装、模拟器、设备验证和 patch 评测全部由后续阶段统一执行。
+
+  当前环境提供文件浏览和编辑命令：
+
+  COMMANDS:
+  {command_docs}
+
+  PATCH-ONLY HARD RULES:
+  - `.ets` 新增代码必须符合 ArkTS：禁止 `var`、`any`、`require()`、`arguments`、`delete` 运算符、`for...in`、`.call/.apply/.bind`、`@ts-ignore`、生成器和 `#private` 字段。
+  - 禁止运行 build_app.py、hvigor、hvigorw、ohpm、npm、run_local_tests.py、run_tests.py、integration_test.py、lint、安装或模拟器命令。
+  - 禁止新增与 KNOWN DEFECT FILES 无关的测试文件。若 KNOWN DEFECT FILE 本身是测试文件，可以仅修改该文件；仍然禁止运行测试。
+  - ISSUE 和 KNOWN DEFECT FILES 是唯一修复依据。优先逐个打开这些文件，仅按需要读取直接调用者或相邻实现，不做大范围仓库搜索。
+  - 只能修改 KNOWN DEFECT FILES。缺陷文件不存在时，可以在该准确路径创建文件。
+  - 只能使用 edit_file、str_replace 或 create 修改仓库文件，不得通过 shell、Python、Node、重定向或 git 命令写文件。
+  - 每次回复的命令块只能包含一条命令。
+  - 第 8 个 agent step 前必须产生有意义的修复 diff；没有充分证据时也应选择最小、可解释的修复，不得用无意义改动凑 patch。
+  - 每次编辑后系统会自动附加 REPAIR_STATUS；也可以手动运行 repair_status。它只是补丁范围检查，不是测试。
+  - REPAIR_STATUS 显示至少一个 KNOWN DEFECT FILE 已修改后，运行 submit。不要等待构建或测试结果。
+  - submit 会自动收集 git diff，并将最终 model_patch 过滤到 KNOWN DEFECT FILES。
+
+  响应始终包含简短 DISCUSSION 和一个普通 Markdown 命令代码块。不要输出 XML、JSON 或工具调用包装。
+
+instance_template: |
+  PATCH-ONLY INSTANCE:
+  本实例只生成 patch，所有编译和测试留到后续阶段。不要运行任何 build/test/install/emulator 命令。
+
+  ISSUE:
+  {issue}
+
+  KNOWN DEFECT FILES:
+  {defect_files}
+
+  HARMONYOS MODULE ROOT（相对仓库根）：
+  {project_path}
+
+  要求：
+  1. 第一条命令直接打开最相关的 KNOWN DEFECT FILE，不要先构建。
+  2. 逐个理解与 ISSUE 相关的缺陷文件，并在限定范围内完成最小功能修复。
+  3. 不要创建与 KNOWN DEFECT FILES 无关的测试；若缺陷文件本身属于测试代码，可在限定范围内修复。不要执行编译、测试、安装、依赖初始化、模拟器或设备命令。
+  4. 至少一次成功 edit_file、str_replace 或 create 后检查系统自动附加的 REPAIR_STATUS。
+  5. REPAIR_STATUS 确认存在缺陷文件修改后直接 submit；无需为了形式再调用一次 repair_status。
+
+  可用语言工具：
+  {language_specified_tools}
+
+  当前打开文件：
+  {open_file}
+
+  当前工作目录：
+  {working_dir}
+
+next_step_template: |
+  {observation}
+
+  当前打开文件：
+  {open_file}
+
+  当前工作目录：
+  {working_dir}
+
+next_step_no_output_template: |
+  你的上一条命令执行成功，但没有输出。
+
+  当前打开文件：
+  {open_file}
+
+  当前工作目录：
+  {working_dir}
+
+demonstration_template: ''
+language_specified_demo: {}
+language_specified_tools:
+  arkts: git
+  typescript: git
+state_command:
+  name: state
+  code: |
+    state() {
+      local working_dir="$PWD";
+      if [ -z $CURRENT_FILE ]; then
+          echo '{"open_file": "n/a", "working_dir": "'$working_dir'"}';
+      else
+          echo '{"open_file": "'$(realpath $CURRENT_FILE)'", "working_dir": "'$working_dir'"}';
+      fi
+    };
+parse_function: ThoughtActionParser
+env_variables:
+  WINDOW: 100
+  OVERLAP: 2
+  CURRENT_LINE: 0
+  CURRENT_FILE: ''
+  STRICT_PATH_EDIT: '1'
+  SEARCH_RESULTS: ()
+  SEARCH_FILES: ()
+  SEARCH_INDEX: 0
+command_files:
+  - config/commands/defaults.sh
+  - config/commands/search.sh
+  - config/commands/edit_linting.sh
+  - config/commands/_split_string.py
+parse_command: ParseCommandDetailed
+history_processor: Last5Observations
+put_demos_in_history: false
+demonstrations: []

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit Patch Set - ArkTS Leaderboards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <section class="brand">
+          <div class="huawei-lockup">
+            <img src="assets/huawei-symbol.svg" alt="Huawei" class="huawei-symbol" />
+            <div class="huawei-wordmark">
+              <strong>HUAWEI</strong>
+              <span>ArkTS Benchmark</span>
+            </div>
+          </div>
+          <div class="brand-divider"></div>
+          <div>
+            <h1>Submit Patch Set</h1>
+            <p id="lockState">checking lock</p>
+          </div>
+        </section>
+        <section class="metrics" aria-label="submit summary">
+          <div class="metric">
+            <span>Current Run Rate</span>
+            <strong id="passRate">--</strong>
+          </div>
+          <div class="metric">
+            <span>Current Passed</span>
+            <strong id="passedCount">--</strong>
+          </div>
+          <div class="metric">
+            <span>Runs</span>
+            <strong id="runCount">--</strong>
+          </div>
+        </section>
+      </header>
+
+      <section class="workspace">
+        <section class="panel submit-panel">
+          <div class="panel-head">
+            <h2>Upload Model Patches</h2>
+            <a class="ghost-link" href="index.html">Dashboard</a>
+          </div>
+
+          <div class="dropzone" id="dropzone">
+            <input id="patchInput" type="file" accept=".patch,.diff,text/plain" multiple />
+            <label for="patchInput">
+              <span aria-hidden="true">↑</span>
+              <span id="fileLabel">Select model patches (1-502)</span>
+            </label>
+          </div>
+
+          <div class="patch-toolbar">
+            <div class="patch-count">
+              <strong id="selectedCount">0</strong>
+              <span>/ 502</span>
+            </div>
+            <p class="message" id="submitMessage"></p>
+            <button id="clearBtn" class="ghost-button" type="button">
+              <span aria-hidden="true">×</span>
+              Clear
+            </button>
+          </div>
+
+          <div class="row-grid" id="patchGrid" aria-label="selected patch rows"></div>
+
+          <div class="options">
+            <label>
+              <span>Parallel slots</span>
+              <input id="parallelSlots" type="number" min="1" max="10" value="1" />
+            </label>
+            <label>
+              <span>HDC targets</span>
+              <input id="hdcTargets" placeholder="auto from hdc list targets, or target1,target2,target3,target4" />
+            </label>
+            <label>
+              <span>Run id</span>
+              <input id="runId" placeholder="auto" />
+            </label>
+            <label class="toggle">
+              <input id="fullRegression" type="checkbox" checked />
+              <span>Full regression</span>
+            </label>
+          </div>
+
+          <button id="submitBtn" class="primary-button" type="button" disabled>
+            <span aria-hidden="true">▶</span>
+            Submit Patch Set
+          </button>
+          <button id="refreshBtn" class="hidden-button" type="button" aria-hidden="true"></button>
+        </section>
+
+        <section class="panel progress-panel">
+          <div class="panel-head">
+            <h2>Current Run</h2>
+            <div class="run-actions">
+              <span id="runMode" class="mode-pill">mode --</span>
+              <button id="stopBtn" class="danger-button" type="button" disabled title="Stop current run">
+                <span aria-hidden="true">■</span>
+                Stop
+              </button>
+              <span id="activeRun" class="pill">idle</span>
+            </div>
+          </div>
+
+          <div class="progress-wrap">
+            <div class="progress-meta">
+              <span id="progressText">0 / 0</span>
+              <strong id="progressPercent">0%</strong>
+            </div>
+            <div class="progress-track">
+              <div id="progressBar" class="progress-bar"></div>
+            </div>
+          </div>
+
+          <div class="stage-strip">
+            <div><span>PASS</span><strong id="runPass">0</strong></div>
+            <div><span>FAIL</span><strong id="runFail">0</strong></div>
+            <div><span>PENDING</span><strong id="runPending">0</strong></div>
+          </div>
+
+          <div class="row-grid status-grid" id="statusGrid" aria-label="run status rows"></div>
+
+          <div class="table-shell">
+            <table>
+              <thead>
+                <tr>
+                  <th>Row</th>
+                  <th>Repo</th>
+                  <th>Verdict</th>
+                  <th>Build</th>
+                  <th>Install</th>
+                  <th>Test</th>
+                </tr>
+              </thead>
+              <tbody id="rowsTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel log-panel">
+        <div class="panel-head">
+          <h2>Runner Log</h2>
+          <span id="logHint">latest tail</span>
+        </div>
+        <pre id="logTail"></pre>
+      </section>
+    </main>
+    <script src="app.js?v=20260715-local"></script>
+  </body>
+</html>
